@@ -6,15 +6,13 @@ This repository contains the continuously updated consensus genome-scale metabol
 
 The [latest version](https://github.com/SysBioChalmers/yeast-GEM/releases/latest) of `yeast-GEM` can be downloaded as a [**ZIP file**](https://github.com/SysBioChalmers/yeast-GEM/zipball/main), while previous versions (7.6.0 and newer) are also still [available](https://github.com/SysBioChalmers/yeast-GEM/releases). You are typically encouraged to use the latest version, as it will have known bugs fixed and represent the latest knowledge in _S. cerevisiae_ metabolism.
 
-Instructions on how to use the model (including [load/save](https://github.com/SysBioChalmers/yeast-GEM/blob/chore/branchRename/README.md#usage) in MATLAB or Python) are available [here](https://github.com/SysBioChalmers/yeast-GEM#installation), and also detailed under _Installation_  and _Usage_ in the `README.md` that can be found in the ZIP-file.
-
 ## Clone or fork the yeast-GEM repository
-To enjoy the full capabilities of `yeast-GEM` and its tracked development on GitHub, you should not download the ZIP file, but instead **clone** or **fork** the `yeast-GEM` repository. If you are not familiar with git, GitHub and its terminology, you can look at this [quickstart](https://docs.github.com/en/get-started/quickstart/set-up-git) and/or this [YouTube video](https://www.youtube.com/watch?v=IE_w8TdmwUE).
+To enjoy the full capabilities of `yeast-GEM` and its tracked development on GitHub, you should not download the ZIP file, but instead **clone** or **fork** the `yeast-GEM` [repository](https://github.com/SysBioChalmers/yeast-GEM). If you are not familiar with git, GitHub and its terminology, you can look at this [quickstart](https://docs.github.com/en/get-started/quickstart/set-up-git) and/or this [YouTube video](https://www.youtube.com/watch?v=IE_w8TdmwUE).
 
 Note: if you want to make contributions to `yeast-GEM` (see below) it is essential to clone or fork the repository.
 
-## MEMOTE model quality report
-The quality of `yeast-GEM` is quantified using the [MEMOTE](https://memote.readthedocs.io/) test suite. The report for the latest `yeast-GEM` version is available [here](https://sysbiochalmers.github.io/yeast-GEM/report.html), while a history report is also [available](https://sysbiochalmers.github.io/yeast-GEM/history_report.html).
+## Usage instructions
+Instructions on how to use the model (including [load/save](https://github.com/SysBioChalmers/yeast-GEM/blob/chore/branchRename/README.md#usage) in MATLAB or Python) are available [here](https://github.com/SysBioChalmers/yeast-GEM#installation), and also detailed under _Installation_  and _Usage_ in the `README.md` that can be found in the ZIP-file.
 
 ## Feedback / help [![Join the chat at https://gitter.im/SysBioChalmers/yeast-GEM](https://badges.gitter.im/SysBioChalmers/yeast-GEM.svg)](https://gitter.im/SysBioChalmers/yeast-GEM?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
