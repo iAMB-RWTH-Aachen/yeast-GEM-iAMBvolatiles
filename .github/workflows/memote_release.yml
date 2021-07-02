@@ -1,7 +1,6 @@
 name: memote release
 
 on:
-  push:
   release:
     type: [published]
 
@@ -18,7 +17,7 @@ jobs:
     - name: Checkout gh-pages branch
       uses: actions/checkout@v2
       with:
-        ref: gh-pagesNew
+        ref: gh-pages
         path: gh-pages-repo
         
     - name: Set up Python 3
@@ -39,7 +38,7 @@ jobs:
         commit_user_name: memote-bot
         commit_message: "chore: update memote release report"
         file_pattern: release_report.html
-        branch: gh-pagesNew
+        branch: gh-pages
         repository: gh-pages-repo
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
