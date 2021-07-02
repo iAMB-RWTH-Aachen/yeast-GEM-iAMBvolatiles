@@ -18,7 +18,7 @@ jobs:
     - name: Checkout gh-pages branch
       uses: actions/checkout@v2
       with:
-        ref: gh-pages
+        ref: gh-pagesNew
         path: gh-pages-repo
         
     - name: Set up Python 3
@@ -27,7 +27,7 @@ jobs:
         python-version: '3.x'
 
     - name: Install memote
-      run: pip install -r requirements/ci-requirements.txt
+      run: pip install -r requirements/requirements.txt
         
     - name: Memote run
       run: |
@@ -39,7 +39,7 @@ jobs:
         commit_user_name: memote-bot
         commit_message: "chore: update memote release report"
         file_pattern: release_report.html
-        branch: gh-pages
+        branch: gh-pagesNew
         repository: gh-pages-repo
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
