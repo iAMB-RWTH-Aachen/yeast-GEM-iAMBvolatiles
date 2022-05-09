@@ -41,7 +41,6 @@ Sulfate	n	O4S	-2		based on kegg	C00059	CHEBI:16189
 Sulfate	c	O4S	-2		based on kegg	C00059	CHEBI:16189										
 NADP(+)	n	C21H25N7O17P3	-3		based on kegg	C00006	CHEBI:58349										
 NADP(+)	v	C21H25N7O17P3	-3		based on kegg	C00006	CHEBI:58349										
-NADH	n	C21H27N7O14P2	-2		based on kegg	C00004	CHEBI:57945										
 L-homoserine	n	C4H9NO3	0		based on kegg	C00263	CHEBI:15699										
 L-aspartate 4-semialdehyde	n	C4H7NO3	0		based on kegg	C00441	CHEBI:18051										
 4-(2-Aminophenyl)-2,4-dioxobutanoate	m	C10H8NO4	-1		based on kegg	C01252	CHEBI:17442										
@@ -61,7 +60,6 @@ Betaine aldehyde	m	C5H12NO	1		based on kegg	C00576 	CHEBI:15710
 Betaine	m	C5H11NO2	0		based on kegg	C00719	CHEBI:17750										
 Coniferyl alcohol	m	C10H12O3	0		based on kegg	C00590	CHEBI:17745										
 Guaiacyl lignin	m	C10H12O3	0		based on kegg	C15805	CHEBI:64475										
-glutathione disulfide	m	C20H32N6O12S2	0		based on kegg	C15805	CHEBI:17858										
 4-Coumarate	m	C9H8O3	0		based on kegg	C00811	CHEBI:32374										
 L-kynurenine	m	C10H12N2O3	0		based on kegg	C00328	CHEBI:16946										
 kynurenate	m	C10H5NO3	-2		based on kegg	C01717	CHEBI:18344										
@@ -131,7 +129,6 @@ formate	n	CHO2	-1		based on kegg	C00058	CHEBI:15740
 S-adenosylmethioninamine	n	C14H24N6O3S	2		based on kegg	C01137	CHEBI:57443										
 Aminopropylcadaverine	n	C8H24N3	3		based on kegg	C16565	CHEBI:64858										
 Aminopropylcadaverine	c	C8H24N3	3		based on kegg	C16565	CHEBI:64858										
-S-adenosylmethioninamine	c	C14H24N6O3S	2		based on kegg	C01137	CHEBI:57443										
 9-cis-Retinol	c	C20H30O	0		based on kegg	C16682	CHEBI:78272										
 9-cis-Retinal	c	C20H28O	0		based on kegg	C16681	CHEBI:78273										
 5-Methyltetrahydropteroyltri-L-glutamate	c	C30H39N9O12	0		based on kegg	C04489	CHEBI:17614										
@@ -150,12 +147,9 @@ Peptide diphthine methyl ester	c	C14H22N4O3R2	0		based on kegg	C01573 	CHEBI:180
 N-acetyl-L-glutamic 5-semialdehyde	n	C7H11NO4	0		based on kegg	C01250	CHEBI:16319										
 2-hydroxyglutarate	m	C5H6O5	-2		based on kegg	C02630	CHEBI:11596										
 S-adenosyl-L-methionine	er	C15H23N6O5S	1		based on kegg	C00019	CHEBI:59789										
-S-adenosyl-L-methionine	m	C15H23N6O5S	1		based on kegg	C00019	CHEBI:59789										
 Dehydroalanine	m	C3H5NO2	0		based on kegg	C02218 	CHEBI:17123										
 D-Ribofuranose	c	C5H10O5	0		based on chebi		ChEBI:47013										
 D-Ribofuranose	n	C5H10O5	0		based on chebi		ChEBI:47013										
-L-asparagine	c	C4H8N2O3	0		based on kegg	C00152	ChEBI:58048										
-farnesyl diphosphate	c	C15H25O7P2	-3		based on kegg	C00448	ChEBI:175763										
 farnesyl diphosphate	v	C15H25O7P2	-3		based on kegg	C00448	ChEBI:175763										
 farnesol	c	C15H26O	0		based on kegg	C01126											
 farnesol	v	C15H26O	0		based on kegg	C01126											
@@ -257,7 +251,6 @@ pyruvate-dehydrogenase-dihydrolipoate	m	C8H16NO2S2R	0		based on kegg	C16255	ChEB
 5-Fluorouridine diphosphate	m	C9H10FN2O12P2	-3		based on kegg	C16255	ChEBI:80404										
 5-Fluorouridine diphosphate	c	C9H10FN2O12P2	-3		based on kegg	C16255	ChEBI:80404										
 Diphthine-methyl-ester-EF2	c	C15H24N5O4R2	1		based on kegg	C21151											
-glutathione	c	C10H16N3O6S	-1		based on kegg	C00051	CHEBI:57925										
 thymine	n	C5H6N2O2	0		based on kegg	C00178	CHEBI:17821										
 thymine	c	C5H6N2O2	0		based on kegg	C00178	CHEBI:17821										
 N6-dihydrolipoyl-L-lysine	m	C15H28N2O2S2R2	0		based on metacyc												
@@ -269,10 +262,8 @@ Thiols	n	HSR	0		based on kegg	C00145	ChEBI:29256
 CPD-171	er	C86H142O9P	-1		based on metacyc												
 CPD-5164	er	C126H208N2O42P2	-2		based on metacyc												
 CPD-5165	er	C132H218N2O47P2	-2		based on metacyc												
-dolichyl phosphate	er	C80H131O4P	-2		based on metacyc												
 CPD-405	er	C8H14NO8PR2	0		based on kegg	C01241	ChEBI:15958										
 CPD-405	m	C8H14NO8PR2	0		based on kegg	C01241	ChEBI:15958										
-L-histidine	c	C7H8N4O2R2	0		based on kegg	C20663											
 2-[(3S)-3-amino-3-carboxypropyl]-L-histidine	c	C11H14N5O4R2	-1		based on kegg	C04441	ChEBI:58031										
 uroporphyrinogen-I	c	C40H36N4O16	-8		based on kegg	C05766	ChEBI:62626										
 uroporphyrinogen-I	n	C40H36N4O16	-8		based on kegg	C05766	ChEBI:62626										
@@ -302,7 +293,6 @@ Adipate semialdehyde	c	C6H10O3	0		based on kegg	C06102	CHEBI:2490
 Adipate semialdehyde	n	C6H10O3	0		based on kegg	C06102	CHEBI:2490										
 trans-3-Chloro-2-propene-1-ol	c	C3H5ClO	0		based on kegg	C06611	CHEBI:28960										
 trans-3-Chloro-2-propene-1-ol	m	C3H5ClO	0		based on kegg	C06611	CHEBI:28960										
-trans-3-Chloroallyl aldehyde	c	C3H3ClO	0		based on kegg	C06613 											
 trans-3-Chloroallyl aldehyde	m	C3H3ClO	0		based on kegg	C06613 											
 5-Fluorodeoxyuridine triphosphate	c	C9H10FN2O14P3	-4		based on kegg	C21751											
 5-Fluorodeoxyuridine triphosphate	m	C9H10FN2O14P3	-4		based on kegg	C21751											
