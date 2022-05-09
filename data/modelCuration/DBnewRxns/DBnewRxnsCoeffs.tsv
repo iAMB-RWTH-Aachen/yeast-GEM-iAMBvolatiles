@@ -71,9 +71,9 @@ index	rxnNames	metNames	comps	coefficient
 15	butanoyl-CoA:electron-transfer flavoprotein 2,3-oxidoreductase	FADH2	p	1
 16	5-Methylcytosine aminohydrolase	H2O	n	-1
 16	5-Methylcytosine aminohydrolase	H+	n	-1
-16	5-Methylcytosine aminohydrolase	5-Methylcytosine	n	-1
+16	5-Methylcytosine aminohydrolase	5-methylcytosine	n	-1
 16	5-Methylcytosine aminohydrolase	ammonium	n	1
-16	5-Methylcytosine aminohydrolase	Thymine	n	1
+16	5-Methylcytosine aminohydrolase	thymine	n	1
 17	adenosine:phosphate alpha-D-ribosyltransferase	phosphate	c	-1
 17	adenosine:phosphate alpha-D-ribosyltransferase	adenosine	c	-1
 17	adenosine:phosphate alpha-D-ribosyltransferase	adenine	c	1
@@ -298,9 +298,9 @@ index	rxnNames	metNames	comps	coefficient
 64	diphthine methyl ester acylhydrolase	methanol	c	1
 64	diphthine methyl ester acylhydrolase	Peptide diphthine	c	1
 65	dimethylallyl-phosphate:FMNH2 prenyltransferase	FMNH2	m	-1
-65	dimethylallyl-phosphate:FMNH2 prenyltransferase	Dimethylallyl phosphate	m	-1
+65	dimethylallyl-phosphate:FMNH2 prenyltransferase	dimethylallyl phosphate	m	-1
 65	dimethylallyl-phosphate:FMNH2 prenyltransferase	phosphate	m	1
-65	dimethylallyl-phosphate:FMNH2 prenyltransferase	Prenylated FMNH2	m	1
+65	dimethylallyl-phosphate:FMNH2 prenyltransferase	prenylated FMNH2	m	1
 66	(R)-2-hydroxyglutarate:pyruvate oxidoreductase [(R)-lactate-forming]	pyruvate	m	-1
 66	(R)-2-hydroxyglutarate:pyruvate oxidoreductase [(R)-lactate-forming]	2-hydroxyglutarate	m	-1
 66	(R)-2-hydroxyglutarate:pyruvate oxidoreductase [(R)-lactate-forming]	2-oxoglutarate	m	1
@@ -768,9 +768,9 @@ index	rxnNames	metNames	comps	coefficient
 163	"acetyl-CoA:propanoyl-CoA 2-C-acetyltransferase;"	2-Methylacetoacetyl-CoA	p	1
 164	5-Methylcytosine aminohydrolase	H2O	c	-1
 164	5-Methylcytosine aminohydrolase	H+	c	-1
-164	5-Methylcytosine aminohydrolase	5-Methylcytosine	c	-1
+164	5-Methylcytosine aminohydrolase	5-methylcytosine	c	-1
 164	5-Methylcytosine aminohydrolase	ammonium	c	1
-164	5-Methylcytosine aminohydrolase	Thymine	c	1
+164	5-Methylcytosine aminohydrolase	thymine	c	1
 165	Ethanol:NADP+ oxidoreductase	NADP(+)	n	-1
 165	Ethanol:NADP+ oxidoreductase	ethanol	n	-1
 165	Ethanol:NADP+ oxidoreductase	NADPH	n	1
