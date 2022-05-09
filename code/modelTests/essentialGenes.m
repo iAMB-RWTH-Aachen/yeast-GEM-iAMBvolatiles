@@ -15,6 +15,7 @@ function [accurancy,tp,tn,fn,fp] = essentialGenes
 initCobraToolbox
 cd ..
 model = loadYeastModel;
+model = ravenCobraWrapper(model);
 cd modelTests
 ko_tol = 1e-6;
 

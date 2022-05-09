@@ -1,24 +1,42 @@
-function saveYeastModel(model,upDATE,allowNoGrowth)
+function saveYeastModel(model,upDATE,allowNoGrowth,binaryFiles)
 % saveYeastModel
 %   Saves model as a .xml, .txt and .yml file. Also updates complementary
 %   files (boundaryMets.txt, README.md and dependencies.txt).
 %
-%   Inputs: model           (struct) Model to save (NOTE: must be COBRA format)
+%   Inputs: model           (struct) model to save. Preferably RAVEN
+%                           format, although COBRA format is also allowed,
+%                           but some fields might be lost in the
+%                           conversion.
 %           upDATE          (bool, opt) If updating the date in the README file
 %                           is needed (default true)
 %           allowNoGrowth   (bool, opt) if saving should be allowed whenever
 %                           the model cannot grow, returning a warning (default
-%                           = true), otherwise will error.
-%   
-%   Usage: saveYeastModel(model,upDATE,allowNoGrowth)
+%                           = true), otherwise will error
+%           binaryFiles     (bool, opt) if the model should be stored in
+%                           binary file formats (= xlsx and mat)
+%
+%   Usage: saveYeastModel(model,upDATE,allowNoGrowth,binaryFiles)
 %
 
 if nargin < 2
     upDATE = true;
 end
-
 if nargin < 3
     allowNoGrowth = true;
+end
+if nargin < 4
+    binaryFiles = false;
+end
+if ~(exist('ravenCobraWrapper.m','file')==2)
+    error(['RAVEN cannot be found. See README.md for installation '...
+        'instructions. RAVEN is required to make sure that the model '...
+        'is stored in the correct file formats for use in the '...
+        'yeast-GEM GitHub repository'])
+end
+
+% Export as RAVEN format
+if isfield(model,'rules')
+    model = ravenCobraWrapper(model);
 end
 
 %Get and change to the script folder, as all folders are relative to this
@@ -31,23 +49,15 @@ cd modelCuration
 model = minimal_Y6(model);
 cd ..
 
-%Delete model.grRules (redundant and possibly conflicting with model.rules):
-if isfield(model,'grRules')
-    model = rmfield(model,'grRules');
-end
-
 %Update SBO terms in model:
 cd missingFields
 model = addSBOterms(model);
 cd ..
 
-%Save "proteins" ("fbc:name" in the xml file) = "geneNames" ("fbc:label" in the xml file):
-model.proteins = model.geneNames;
-
 %Check if model is a valid SBML structure:
-writeCbModel(model,'sbml','tempModel.xml');
-[~,errors] = TranslateSBML('tempModel.xml');
-if ~isempty(errors)
+exportModel(model,'tempModel.xml',false,false,true);
+[~,~,errors] = evalc('TranslateSBML(''tempModel.xml'',1,0)');
+if any(strcmp({errors.severity},'Error'))
     delete('tempModel.xml');
     error('Model should be a valid SBML structure. Please fix all errors before saving.')
 end
@@ -59,41 +69,27 @@ checkGrowth(model,'anaerobic',allowNoGrowth)
 %Update .xml, .txt and .yml models:
 copyfile('tempModel.xml','../model/yeast-GEM.xml')
 delete('tempModel.xml');
-writeCbModel(model,'text','../model/yeast-GEM.txt');
-exportForGit(model,'yeast-GEM','../model',{'yml'},false,false);
-
-%Detect boundary metabolites and save them in a .txt file:
-fid = fopen('../model/boundaryMets.txt','wt');
-for i = 1:length(model.rxns)
-    pos = find(model.S(:,i) ~= 0);
-    if length(pos) == 1 %Exchange rxn
-        fprintf(fid,[model.mets{pos} '\t' model.metNames{pos} '\n']);
-    end
+if binaryFiles==false
+    exportForGit(model,'yeast-GEM','../model',{'yml','txt'},false,false);
+else
+    exportForGit(model,'yeast-GEM','../model',{'yml','txt','xlsx','mat'},false,false);
 end
-fclose(fid);
 
 %Update README file: date + size of model
+modelVersion = regexprep(model.id,'yeastGEM_v?','');
+nGenes=num2str(numel(model.genes));
+nMets=num2str(numel(model.mets));
+nRxns=num2str(numel(model.rxns));
 copyfile('../README.md','backup.md')
 fin  = fopen('backup.md','r');
 fout = fopen('../README.md','w');
-still_reading = true;
-while still_reading
-    inline = fgets(fin);
-    if ~ischar(inline)
-        still_reading = false;
-    else
-        if startsWith(inline,'**Last update:** ') && upDATE
-            inline = ['**Last update:** ' datestr(datetime,'yyyy-mm-dd') newline];
-        elseif startsWith(inline,'|_Saccharomyces cerevisiae_|')
-            inline = ['|_Saccharomyces cerevisiae_|[Yeast 7.6]' ...
-                '(https://sourceforge.net/projects/yeast/)|' ...
-                num2str(length(model.rxns)) '|' ...
-                num2str(length(model.mets)) '|' ...
-                num2str(length(model.genes)) '|' newline];
-        end
-        inline=unicode2native(inline,'UTF-8');
-        fwrite(fout,inline,'uint8');
-    end
+newStats = ['| $1 | ' datestr(now,'dd-mmm-yyyy') ' | ' modelVersion ' | ' nRxns ' | ' nMets ' | ' nGenes ' |'];
+searchStats = '^\| (\_Saccharomyces cerevisiae\_) \| \d{2}-\D{3}-\d{4} \| (\d+\.\d+\.\d+|develop) \| \d+ \| \d+ \| \d+ \|';
+while ~feof(fin)
+    str = fgets(fin);
+    inline = regexprep(str,searchStats,newStats);
+    inline = unicode2native(inline,'UTF-8');
+    fwrite(fout,inline);
 end
 fclose('all');
 delete('backup.md');
@@ -137,22 +133,22 @@ if strcmp(condition,'anaerobic')
 end
 try
     xPos = strcmp(model.rxnNames,'growth');
-    sol  = optimizeCbModel(model);
-    if sol.v(xPos) < 1e-6
+    sol  = solveLP(model);
+    if sol.x(xPos) < 1e-6
         dispText = ['The model is not able to support growth under ' ...
-                    condition ' conditions. Please ensure the model can grow'];
+            condition ' conditions. Please ensure the model can grow'];
     end
 catch
     dispText = ['The model yields an infeasible simulation using COBRA ' ...
-                'under ' condition ' conditions. Please ensure the model ' ...
-                'can be simulated with COBRA'];
+        'under ' condition ' conditions. Please ensure the model ' ...
+        'can be simulated with COBRA'];
 end
 
 if exist('dispText','var')
     if allowNoGrowth
         warning([dispText ' before opening a PR.'])
     else
-        error([dispText ' before comitting.'])
+        error([dispText ' before committing.'])
     end
 end
 

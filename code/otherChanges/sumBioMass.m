@@ -56,7 +56,7 @@ end
 if dispOutput
     disp(['X -> ' num2str(X) ' gDW/gDW'])
     % Simulate growth:
-    sol = optimizeCbModel(model);
+    sol = solveLP(model,1);
     disp(['Growth = ' num2str(sol.f) ' 1/h'])
     disp(' ')
 end

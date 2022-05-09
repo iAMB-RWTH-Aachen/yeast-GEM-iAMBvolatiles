@@ -1,59 +1,51 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % model = addSBOterms(model)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 function model = addSBOterms(model)
 
-%Get RAVEN model for matching names & compartments
-model_r = ravenCobraWrapper(model);
-
-%Add SBO terms for mets:
-model.metSBOTerms = cell(size(model.mets));
+%Define SBO terms for mets
+metsSBO=cell(size(model.mets));
 for i = 1:length(model.mets)
-    metName = model_r.metNames{i};
+    metName = model.metNames{i};
     if ismember(metName,{'biomass','DNA','RNA','protein','carbohydrate','lipid','cofactor','ion'}) ...
             || endsWith(metName,' backbone') || endsWith(metName,' chain')
-        model.metSBOTerms{i} = 'SBO:0000649';     %Biomass
+        metsSBO{i} = 'SBO:0000649';     %Biomass
     else
-        model.metSBOTerms{i} = 'SBO:0000247';     %Simple chemical
+        metsSBO{i} = 'SBO:0000247';     %Simple chemical
     end
 end
 
-%Add SBO terms for rxns:
-model.rxnSBOTerms = cell(size(model.rxns));
-for i = 1:length(model.rxns)
-    rxnName   = model_r.rxnNames{i};
-    metNames  = model_r.metNames(model.S(:,i) ~= 0);
-    metComps  = model_r.metComps(model.S(:,i) ~= 0);
-    metStoich = model_r.S(model.S(:,i) ~= 0,i);
-    
-    if length(metNames) == 1
-        if strcmp(model_r.comps{metComps},'e')
-            model.rxnSBOTerms{i} = 'SBO:0000627';	%Exchange rxn
-            
-        elseif metStoich > 0
-            model.rxnSBOTerms{i} = 'SBO:0000628';	%Demand rxn
-        else
-            model.rxnSBOTerms{i} = 'SBO:0000632';	%Sink rxn
-        end
-        
-    elseif strcmp(rxnName,'biomass pseudoreaction')
-        model.rxnSBOTerms{i} = 'SBO:0000629';       %Biomass pseudo-rxn
-        
-    elseif strcmp(rxnName,'non-growth associated maintenance reaction')
-        model.rxnSBOTerms{i} = 'SBO:0000630';       %ATP maintenance
-        
-    elseif contains(rxnName,'pseudoreaction') || contains(rxnName,'SLIME rxn')
-        model.rxnSBOTerms{i} = 'SBO:0000395';       %Encapsulating process
-        
-    elseif length(unique(metComps)) > 1 && length(unique(metNames)) < length(metNames)
-        model.rxnSBOTerms{i} = 'SBO:0000655';       %Transport rxn
-        
+%Define SBO terms for rxns
+rxnSBO = cell(size(model.rxns));
+rxnSBO(:) = {'SBO:0000176'};       %Metabolic rxn, if nothing else
+% Exchange, sink & demand (only 1 reactant)
+reactantNumber=sum(model.S~=0,1);
+reactantNumber=find(reactantNumber==1);
+for i=1:numel(reactantNumber)
+    idx=reactantNumber(i);
+    if strcmp(model.comps{model.metComps(find(model.S(:,idx)))},'e') || ...
+            strcmp(model.compNames{model.metComps(find(model.S(:,idx)))},'extracellular')
+        rxnSBO{idx} = 'SBO:0000627'; %Exchange rxn
+    elseif sum(model.S(:,idx))<0
+        rxnSBO{idx} = 'SBO:0000632';	%Sink rxn
     else
-        model.rxnSBOTerms{i} = 'SBO:0000176';       %Metabolic rxn
+        rxnSBO{idx} = 'SBO:0000628';	%Demand rxn
+    end
+end
+% Transport reactions
+i=getTransportRxns(model);
+rxnSBO(i) = {'SBO:0000655'};
+% Pseudo reactions
+for i=numel(model.rxns)
+    if strcmp(model.rxnNames(i),'biomass pseudoreaction')
+        rxnSBO{i} = 'SBO:0000629';       %Biomass pseudo-rxn
+    elseif strcmp(model.rxnNames(i),'non-growth associated maintenance reaction')
+        rxnSBO{i} = 'SBO:0000630';       %ATP maintenance
+    elseif contains(model.rxnNames(i),'pseudoreaction') || contains(model.rxnNames(i),'SLIME rxn')
+        rxnSBO{i} = 'SBO:0000395';       %Encapsulating process
     end
 end
 
-end
+% Add SBO term if it wasn't annotated yet
+model=editMiriam(model,'met','all','sbo',metsSBO,'fill');
+model=editMiriam(model,'rxn','all','sbo',rxnSBO,'fill');
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+end

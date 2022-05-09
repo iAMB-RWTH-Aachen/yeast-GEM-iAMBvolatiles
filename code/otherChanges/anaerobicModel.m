@@ -18,7 +18,7 @@ model = scaleBioMass(model,'protein',P,'carbohydrate',false);
 
 %2nd change: Removes the requirement of heme a, NAD(PH), coenzyme A in the biomass equation
 %            (not used under anaerobic conditions)
-mets = {'s_3714[c]','s_1198[c]','s_1203[c]','s_1207[c]','s_1212[c]','s_0529[c]'};
+mets = {'s_3714','s_1198','s_1203','s_1207','s_1212','s_0529'};
 [~,met_index] = ismember(mets,model.mets);
 model.S(met_index,strcmp(model.rxns,'r_4598')) = 0;
 
@@ -41,26 +41,5 @@ model.lb(strcmp(model.rxns,'r_0714')) = 0; %Cytoplasm
 model.ub(strcmp(model.rxns,'r_0487')) = 0;
 %Block 2-oxoglutarate + L-glutamine -> 2 L-glutamate (alternative pathway)
 model.ub(strcmp(model.rxns,'r_0472')) = 0;
-
-end
-
-%%
-
-function model = changeGAM(model,GAM,NGAM)
-
-bioPos = strcmp(model.rxnNames,'biomass pseudoreaction');
-for i = 1:length(model.mets)
-    S_ix  = model.S(i,bioPos);
-    isGAM = sum(strcmp({'ATP [cytoplasm]','ADP [cytoplasm]','H2O [cytoplasm]', ...
-        'H+ [cytoplasm]','phosphate [cytoplasm]'},model.metNames{i})) == 1;
-    if S_ix ~= 0 && isGAM
-        model.S(i,bioPos) = sign(S_ix)*GAM;
-    end
-end
-
-if nargin >1
-    pos = strcmp(model.rxnNames,'non-growth associated maintenance reaction');%NGAM
-    model = setParam(model,'eq',model.rxns(pos),NGAM);% set both lb and ub to be mu
-end
 
 end

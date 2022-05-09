@@ -1,11 +1,10 @@
-%This is for growth test: Fig S4c for yeast8 paper
+% This is for growth test: Fig S4c for yeast8 paper
 % here we use several chemostat data: 'N-limited aerboic' 'C-limited
 % aerobic' 'C-limited anaerobic' 'N-limited anaerobic'
 % when simulating N-limited condition, protein content was rescaled, and
 % when simulate anaerobic condtion, heme NADH NADP NADPH NAD were rescaled
 % to be 0.
 
-initCobraToolbox
 cd ..
 model = loadYeastModel;
 model_origin = model;
@@ -80,14 +79,14 @@ for i = 1:length(exp_data(:,1))
     for j = 1:length(exp_data(1,:))-1
 
         if abs(exp_data(i,j))==1000
-            model_test = changeRxnBounds(model_test,model_test.rxns(pos(j)),-exp_data(i,j),'l');
+            model_test = setParam(model_test,'lb',model_test.rxns(pos(j)),-exp_data(i,j));
         else
-            model_test = changeRxnBounds(model_test,model_test.rxns(pos(j)),-exp_data(i,j),'b');
+            model_test = setParam(model_test,'ub',model_test.rxns(pos(j)),-exp_data(i,j));
         end
     end
 
-    model_test = changeObjective(model_test,model_test.rxns(pos(4)),+1);
-    sol        = optimizeCbModel(model_test,'max');
+    model_test = setParam(model_test,'obj',model_test.rxns(pos(4)),1);
+    sol        = solveLP(model_test,1);
     %Store relevant variables:
     mod_data(i,:) = abs(sol.x(pos)');
     solresult(:,i) = sol.x;

@@ -20,9 +20,9 @@ if ~strcmp(currentBranch,'main')
 end
 
 %Bump version number:
-oldModel   = load('../model/yeast-GEM.mat');
-oldVersion = oldModel.model.modelID;
-oldVersion = oldVersion(strfind(oldVersion,'_v')+2:end);
+fid = fopen('../version.txt','r');
+oldVersion = fgetl(fid);
+fclose(fid);
 oldVersion = str2double(strsplit(oldVersion,'.'));
 newVersion = oldVersion;
 switch bumpType
@@ -49,12 +49,27 @@ if ~contains(history,['yeast' newVersion ':'])
 end
 
 %Load model:
-initCobraToolbox
-model = readCbModel('../model/yeast-GEM.xml');
+model = importModel('../model/yeast-GEM.xml');
+
+%Allow .mat & .xlsx storage:
+copyfile('../.gitignore','backup')
+fin  = fopen('backup','r');
+fout = fopen('../.gitignore','w');
+still_reading = true;
+while still_reading
+  inline = fgets(fin);
+  if ~ischar(inline)
+      still_reading = false;
+  elseif ~startsWith(inline,'*.mat') && ~startsWith(inline,'*.xlsx')
+      fwrite(fout,inline);
+  end
+end
+fclose('all');
+delete('backup');
 
 %Include tag and save model:
-model.modelID = ['yeastGEM_v' newVersion];
-saveYeastModel(model,false,false)   %only save if model can grow
+model.id = ['yeastGEM_v' newVersion];
+saveYeastModel(model,true,true,true)   %only save if model can grow
 
 %Check if any file changed (except for history.md and 1 line in yeast-GEM.xml):
 diff   = git('diff --numstat');
@@ -81,40 +96,8 @@ if change
         'then merge to main, and try again.'])
 end
 
-%Allow .mat & .xlsx storage:
-copyfile('../.gitignore','backup')
-fin  = fopen('backup','r');
-fout = fopen('../.gitignore','w');
-still_reading = true;
-while still_reading
-  inline = fgets(fin);
-  if ~ischar(inline)
-      still_reading = false;
-  elseif ~startsWith(inline,'*.mat') && ~startsWith(inline,'*.xlsx')
-      fwrite(fout,inline);
-  end
-end
-fclose('all');
-delete('backup');
-
-%Store model as .mat:
-save('../model/yeast-GEM.mat','model');
-
-%Convert to RAVEN format and store model as .xlsx:
-model = ravenCobraWrapper(model);
-model.annotation.defaultLB    = -1000;
-model.annotation.defaultUB    = +1000;
-model.annotation.taxonomy     = 'taxonomy/559292';
-model.annotation.givenName    = 'Eduard';
-model.annotation.familyName   = 'Kerkhoven';
-model.annotation.email        = 'eduardk@chalmers.se';
-model.annotation.organization = 'Chalmers University of Technology';
-model.annotation.note         = 'Saccharomyces cerevisiae - strain S288C';
-exportToExcelFormat(model,'../model/yeast-GEM.xlsx');
-
 %Update version file:
 fid = fopen('../version.txt','wt');
 fprintf(fid,newVersion);
 fclose(fid);
-
 end

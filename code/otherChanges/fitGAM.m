@@ -71,24 +71,6 @@ end
 
 end
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-function model = changeGAM(model,GAM)
-
-bioPos = strcmp(model.rxnNames,'biomass pseudoreaction');
-for i = 1:length(model.mets)
-    S_ix  = model.S(i,bioPos);
-    isGAM = sum(strcmp({'ATP [cytoplasm]','ADP [cytoplasm]','H2O [cytoplasm]', ...
-        'H+ [cytoplasm]','phosphate [cytoplasm]'},model.metNames{i})) == 1;
-    if S_ix ~= 0 && isGAM
-        model.S(i,bioPos) = sign(S_ix)*GAM;
-    end
-end
-
-end
-    
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 function mod_data = simulateChemostat(model,exp_data)
 
 %Relevant positions:
@@ -101,10 +83,10 @@ pos(4) = find(strcmp(model.rxnNames,'carbon dioxide exchange'));
 mod_data = zeros(size(exp_data));
 for i = 1:length(exp_data(:,1))
     %Fix biomass and minimize glucose:
-    model = changeRxnBounds(model,model.rxns(pos(1)),exp_data(i,1),'l');
-    model = changeRxnBounds(model,model.rxns(pos(2)),-10,'l');
-    model = changeObjective(model,model.rxns(pos(2)),+1);
-    sol   = optimizeCbModel(model);
+    model = setParam(model,'lb',model.rxns(pos(1)),exp_data(i,1));
+    model = setParam(model,'lb',model.rxns(pos(2)),-10);
+    model = setParam(model,'obj',model.rxns(pos(2)),+1);
+    sol   = solveLP(model,1);
     %Store relevant variables:
     mod_data(i,:) = abs(sol.x(pos)');
 end
