@@ -322,10 +322,6 @@ index	rxnNames	metNames	comps	coefficient
 70	cytidine nucleosidase	H2O	c	-1
 70	cytidine nucleosidase	cytosine	c	1
 70	cytidine nucleosidase	D-Ribofuranose	c	1
-70	cytidine nucleosidase	cytidine	n	-1
-70	cytidine nucleosidase	H2O	n	-1
-70	cytidine nucleosidase	cytosine	n	1
-70	cytidine nucleosidase	D-Ribofuranose	n	1
 71	"L-aspartate:ammonia ligase (AMP-forming);asparagine synthetase"	ammonium	c	-1
 71	"L-aspartate:ammonia ligase (AMP-forming);asparagine synthetase"	ATP	c	-1
 71	"L-aspartate:ammonia ligase (AMP-forming);asparagine synthetase"	L-aspartate	c	-1
@@ -858,10 +854,6 @@ index	rxnNames	metNames	comps	coefficient
 182	S-adenosylmethioninamine:cadaverine 3-aminopropyltransferase	5'-Methylthioadenosine	n	1
 182	S-adenosylmethioninamine:cadaverine 3-aminopropyltransferase	Aminopropylcadaverine	n	1
 182	S-adenosylmethioninamine:cadaverine 3-aminopropyltransferase	H+	n	1
-183	cytidine nucleosidase	cytidine	n	-1
-183	cytidine nucleosidase	H2O	n	-1
-183	cytidine nucleosidase	cytosine	n	1
-183	cytidine nucleosidase	D-Ribofuranose	n	1
 183	cytidine nucleosidase	cytidine	n	-1
 183	cytidine nucleosidase	H2O	n	-1
 183	cytidine nucleosidase	cytosine	n	1
