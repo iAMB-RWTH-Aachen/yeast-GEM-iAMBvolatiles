@@ -9,6 +9,16 @@
 %       New reaction should be in .tsv format.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+cd ..
+model = loadYeastModel;
+metsInfo = '../data/modelCuration/DBnewRxns/DBnewRxnsMets.tsv';
+rxnsCoeffs = '../data/modelCuration/DBnewRxns/DBnewRxnsCoeffs.tsv';
+rxnsInfo = '../data/modelCuration/DBnewRxns/DBnewRxnsRxns.tsv';
+genesInfo = '../data/modelCuration/DBnewRxns/DBnewRxnsGenes.tsv';
+newModel = curateMetsRxnsGenes(model,metsInfo,genesInfo,rxnsCoeffs,rxnsInfo);
+saveYeastModel(model)
+cd modelCuration
+
 % Load model
 cd ..
 model = loadYeastModel;
