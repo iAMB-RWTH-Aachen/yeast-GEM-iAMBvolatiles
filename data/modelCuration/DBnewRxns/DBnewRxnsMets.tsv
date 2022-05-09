@@ -1,11 +1,9 @@
 metNames	comps	formula	charge	inchi	metNotes	kegg.compound	chebi	pubchem.compound	metanetx.chemical	seed.compound	bigg.metabolite	biocyc	envipath	lipidmaps	reactome	sabiork.compound	slm
 FAD	n	C27H30N9O15P2	-3		based on kegg	C00016	CHEBI:57692										
 FAD	p	C27H30N9O15P2	-3		based on kegg	C00016	CHEBI:57692										
-FAD	v	C27H30N9O15P2	-3		based on kegg	C00016	CHEBI:57692										
 FADH2	p	C27H33N9O15P2	-2		based on kegg	C01352	CHEBI:58307										
 FMN	n	C17H18N4O9P	-3		based on kegg	C00061	CHEBI:58210										
 P1,P3-Bis(5'-adenosyl) triphosphate	m	C20H24N10O16P3	-3		based on kegg	C06197	CHEBI:27775										
-P1,P3-Bis(5'-adenosyl) triphosphate	c	C20H24N10O16P3	-3		based on kegg	C06197	CHEBI:27775										
 P1,P3-Bis(5'-adenosyl) triphosphate	n	C20H24N10O16P3	-3		based on kegg	C06197	CHEBI:27775										
 2,5-Dioxopentanoate	c	C5H5O4	-1		based on kegg	C00433	CHEBI:17415										
 Formamidopyrimidine nucleoside triphosphate	c	C10H15N5O15P3	-3		based on kegg	C05922											
@@ -26,8 +24,6 @@ CMP	n	C9H12N3O8P	-2		based on kegg	C00055	CHEBI:60377
 cytidine	n	C9H13N3O5	0		based on kegg	C00475	CHEBI:17562										
 propanoyl-CoA	p	C24H40N7O17P3S	-4		based on kegg	C00100	CHEBI:15539										
 propanoyl-CoA	m	C24H40N7O17P3S	-4		based on kegg	C00100	CHEBI:15539										
-propanoyl-CoA	n	C24H40N7O17P3S	-4		based on kegg	C00100	CHEBI:15539										
-propanoyl-CoA	c	C24H40N7O17P3S	-4		based on kegg	C00100	CHEBI:15539										
 2-Methylacetoacetyl-CoA	p	C26H42N7O18P3S	-4		based on kegg	C03344	CHEBI:15476										
 2-Methylacetoacetyl-CoA	m	C26H42N7O18P3S	-4		based on kegg	C03344	CHEBI:15476										
 D-ribose 5-phosphate	c	C5H9O8P	-2		based on kegg	C00117	CHEBI:17797										
@@ -59,14 +55,10 @@ S-(hydroxymethyl)glutathione	c	C11H18N3O7S	-1		based on chebi		CHEBI:58758
 S-(hydroxymethyl)glutathione	m	C11H18N3O7S	-1		based on chebi		CHEBI:58758										
 Tetrahydrofolate	n	C19H21N7O6	-2		based on kegg	C00101	CHEBI:20506										
 Dihydrofolate	n	C19H19N7O6	-2		based on kegg	C00415	CHEBI:15633										
-1,2-Diacyl-sn-glycerol	c	C5H6O5R2	0		based on kegg	C00641	CHEBI:17815										
-1,2-Diacyl-sn-glycerol	n	C5H6O5R2	0		based on kegg	C00641	CHEBI:17815										
 Nicotinamide D-ribonucleotide	c	C11H15N2O8P	0		based on kegg	C00455	CHEBI:16171										
 Nicotinamide-beta-riboside	c	C11H15N2O5	1		based on kegg	C03150	CHEBI:15927										
 Betaine aldehyde	m	C5H12NO	1		based on kegg	C00576 	CHEBI:15710										
 Betaine	m	C5H11NO2	0		based on kegg	C00719	CHEBI:17750										
-Phosphatidate	c	C5H5O8PR2	-2		based on chebi	C00416	CHEBI:16337										
-Phosphatidate	n	C5H5O8PR2	-2		based on chebi	C00416 	CHEBI:16337										
 Coniferyl alcohol	m	C10H12O3	0		based on kegg	C00590	CHEBI:17745										
 Guaiacyl lignin	m	C10H12O3	0		based on kegg	C15805	CHEBI:64475										
 glutathione disulfide	m	C20H32N6O12S2	0		based on kegg	C15805	CHEBI:17858										
@@ -116,8 +108,6 @@ Phytic acid	n	C6H6O24P6	-12		based on kegg	C01204	CHEBI:17401
 1-Diphosinositol pentakisphosphate	n	C6H6O27P7	-13		based on kegg	C11174	CHEBI:62919										
 3-Sulfolactate	m	C3H6O6S	0		based on kegg	C11537	CHEBI:48291										
 3-Sulfopyruvate	m	C3H4O6S	0		based on kegg	C05528	CHEBI:16894										
-Lathosterol	er	C27H46O	0		based on kegg	C01189 	CHEBI:17168										
-7-Dehydrocholesterol	er	C27H44O	0		based on kegg	C01164	CHEBI:17759										
 1,2-Dihydroxy-5-(methylthio)pent-1-en-3-one	c	C6H9O3S	-1		based on kegg	C15606	CHEBI:49252										
 1,2-Dihydroxy-5-(methylthio)pent-1-en-3-one	n	C6H9O3S	-1		based on kegg	C15606	CHEBI:49252										
 4-Methylthio-2-oxobutanoic acid	c	C5H7O3S	-1		based on kegg	C01180	CHEBI:16723										
@@ -149,7 +139,6 @@ Tetrahydropteroyltri-L-glutamate	c	C29H37N9O12	0		based on kegg	C04144	CHEBI:174
 L-Selenomethionine	c	C5H11NO2Se	0		based on kegg	C05335 	CHEBI:30021										
 2,5-Diamino-6-(5-phospho-D-ribosylamino)pyrimidin-4(3H)-one	c	C9H16N5O8P	0		based on kegg	C01304	CHEBI:29114										
 2,5-Diamino-6-(5-phospho-D-ribitylamino)pyrimidin-4(3H)-one	c	C9H18N5O8P	0		based on kegg	C18910	CHEBI:52402										
-4,4-Dimethyl-5alpha-cholest-7-en-3beta-ol	er	C29H50O	0		based on kegg	C04530 	CHEBI:16455										
 alpha-isopropylmalate	c	C7H10O5	-2		based on kegg	C02504	CHEBI:1178										
 L-Histidine-[translation elongation factor 2]	c	C7H8N4O2R2	0		based on kegg	C20663 											
 Peptide 2-(3-carboxy-3-aminopropyl)-L-histidine	c	C11H14N5O4R2	-1		based on kegg	C04441	CHEBI:73995										
@@ -159,7 +148,6 @@ Thiamin phosphate	c	C12H16N4O4PS	-1		based on kegg	C01081	CHEBI:9533
 Carboxyphosphate	c	CHO6P	-2		based on kegg	C20969	CHEBI:90099										
 Peptide diphthine methyl ester	c	C14H22N4O3R2	0		based on kegg	C01573 	CHEBI:18054										
 N-acetyl-L-glutamic 5-semialdehyde	n	C7H11NO4	0		based on kegg	C01250	CHEBI:16319										
-Ascorbate	c	C6H7O6	-1		based on kegg	C00072 	CHEBI:38290										
 2-hydroxyglutarate	m	C5H6O5	-2		based on kegg	C02630	CHEBI:11596										
 S-adenosyl-L-methionine	er	C15H23N6O5S	1		based on kegg	C00019	CHEBI:59789										
 S-adenosyl-L-methionine	m	C15H23N6O5S	1		based on kegg	C00019	CHEBI:59789										
@@ -171,7 +159,6 @@ farnesyl diphosphate	c	C15H25O7P2	-3		based on kegg	C00448	ChEBI:175763
 farnesyl diphosphate	v	C15H25O7P2	-3		based on kegg	C00448	ChEBI:175763										
 farnesol	c	C15H26O	0		based on kegg	C01126											
 farnesol	v	C15H26O	0		based on kegg	C01126											
-Ditrans-polycis-polyprenols	er	C80H130O	0		based on metacyc												
 2,5-hexanedione	c	C6H10O2	0		based on metacyc												
 2,5-hexanedione	n	C6H10O2	0		based on metacyc												
 hexanediol	c	C6H14O2	0		based on chebi		ChEBI:85014										
@@ -192,7 +179,6 @@ phosphatidylcholine	er	C10H18NO8PR2	0		based on metacyc	C00157	ChEBI:16110
 cytosine	n	C4H5N3O	0		based on metacyc	C00380	ChEBI:16040										
 diphosphate	v	HO7P2	-3		based on metacyc	C00013	ChEBI:33019										
 3-demethylubiquinol-6	m	C38H58O4	0		based on metacyc		ChEBI:64253										
-dolichol	er	C80H132O	0		based on metacyc	C00381	ChEBI:16091										
 2-phenylacetaldehyde	c	C8H8O	0		based on metacyc	C00601	ChEBI:16424										
 N,N'-diacetylchitobiosyldiphosphodolichol	er	C96H158N2O17P2	-2		based on metacyc	C04537	ChEBI:12427										
 4-hydroxybenzaldehyde	m	C7H6O2	0		based on kegg	C00633	CHEBI:17597										
@@ -233,8 +219,6 @@ Sucrose 6-phosphate	c	C12H21O14P	-2		based on kegg	C16688	CHEBI:131603
 4-(2-Amino-3-hydroxyphenyl)-2,4-dioxobutanoate	m	C10H8NO5	-1		based on kegg	C05645	CHEBI:27593										
 Thiamin diphosphate	m	C12H16N4O7P2S	-2		based on kegg	C00068	CHEBI:9532										
 2-(alpha-Hydroxyethyl)thiamine diphosphate	m	C14H20N4O8P2S	-2		based on kegg	C05125 	CHEBI:978										
-5-Hydroxy-N-formylkynurenine	c	C11H12N2O5	0		based on kegg	C05648	CHEBI:2065										
-5-Hydroxykynurenine	c	C10H13N2O4	0		based on kegg	C05651	CHEBI:36408										
 L-Selenocysteine	c	C3H6NO2Se	-1		based on kegg	C05688	CHEBI:27760										
 L-Selenocysteine	n	C3H6NO2Se	-1		based on kegg	C05688	CHEBI:27760										
 Deamino-NAD(+)	c	C21H24N6O15P2	-2		based on kegg	C00857	CHEBI:58437										
@@ -274,7 +258,6 @@ pyruvate-dehydrogenase-dihydrolipoate	m	C8H16NO2S2R	0		based on kegg	C16255	ChEB
 5-Fluorouridine diphosphate	c	C9H10FN2O12P2	-3		based on kegg	C16255	ChEBI:80404										
 Diphthine-methyl-ester-EF2	c	C15H24N5O4R2	1		based on kegg	C21151											
 glutathione	c	C10H16N3O6S	-1		based on kegg	C00051	CHEBI:57925										
-L-cysteinylglycine	n	C5H10N2O3S	0		based on kegg	C01419	CHEBI:4047										
 thymine	n	C5H6N2O2	0		based on kegg	C00178	CHEBI:17821										
 thymine	c	C5H6N2O2	0		based on kegg	C00178	CHEBI:17821										
 N6-dihydrolipoyl-L-lysine	m	C15H28N2O2S2R2	0		based on metacyc												
@@ -289,11 +272,6 @@ CPD-5165	er	C132H218N2O47P2	-2		based on metacyc
 dolichyl phosphate	er	C80H131O4P	-2		based on metacyc												
 CPD-405	er	C8H14NO8PR2	0		based on kegg	C01241	ChEBI:15958										
 CPD-405	m	C8H14NO8PR2	0		based on kegg	C01241	ChEBI:15958										
-S-adenosylmethionine	c	C15H23N6O5S	0		based on kegg	C00019	ChEBI:59789										
-S-adenosylmethionine	m	C15H23N6O5S	0		based on kegg	C00019	ChEBI:59789										
-S-adenosylmethionine	er	C15H23N6O5S	0		based on kegg	C00019	ChEBI:59789										
-phosphatidylethanolamine	c	C7H12NO8PR2	0		based on kegg	C00350	ChEBI:16038										
-phosphatidylethanolamine	m	C7H12NO8PR2	0		based on kegg	C00350	ChEBI:16038										
 L-histidine	c	C7H8N4O2R2	0		based on kegg	C20663											
 2-[(3S)-3-amino-3-carboxypropyl]-L-histidine	c	C11H14N5O4R2	-1		based on kegg	C04441	ChEBI:58031										
 uroporphyrinogen-I	c	C40H36N4O16	-8		based on kegg	C05766	ChEBI:62626										
@@ -305,8 +283,6 @@ coproporphyrinogen I	n	C36H40N4O8	-4		based on metacyc
 4-(methylsulfanyl)-2-oxobutanoate	c	C5H7O3S	-1		based on kegg	C01180	ChEBI:16723										
 4-(methylsulfanyl)-2-oxobutanoate	n	C5H7O3S	-1		based on kegg	C01180	ChEBI:16723										
 prenylated FMNH2	m	C22H29N4O9P	-2		based on kegg	C21215											
-Propanoate	c	C3H5O2	-1		based on kegg	C00163	CHEBI:17272										
-Propanoate	n	C3H5O2	-1		based on kegg	C00163	CHEBI:17272										
 D-Galactose	c	C6H12O6	0		based on kegg	C00124 	CHEBI:4139										
 3-Sulfinylpyruvate	c	C3H2O5S	-2		based on kegg	C05527	CHEBI:1665										
 3-Sulfinylpyruvate	p	C3H2O5S	-2		based on kegg	C05527	CHEBI:1665										
@@ -328,11 +304,9 @@ trans-3-Chloro-2-propene-1-ol	c	C3H5ClO	0		based on kegg	C06611	CHEBI:28960
 trans-3-Chloro-2-propene-1-ol	m	C3H5ClO	0		based on kegg	C06611	CHEBI:28960										
 trans-3-Chloroallyl aldehyde	c	C3H3ClO	0		based on kegg	C06613 											
 trans-3-Chloroallyl aldehyde	m	C3H3ClO	0		based on kegg	C06613 											
-5-Dehydroepisterol	er	C28H44O	0		based on kegg	C15780	CHEBI:52972										
 5-Fluorodeoxyuridine triphosphate	c	C9H10FN2O14P3	-4		based on kegg	C21751											
 5-Fluorodeoxyuridine triphosphate	m	C9H10FN2O14P3	-4		based on kegg	C21751											
 glycerone phosphate	c	C3H5O6P	-2		based on kegg	C00111	ChEBI:57642										
-glycerone phosphate	m	C3H5O6P	-2		based on kegg	C00111	ChEBI:57642										
 hydroxy-5-trans-dodecenoyl-CoA	p	C33H52N7O18P3S	0		based on metacyc												
 3-oxo-dodec-5-enoyl-CoA	p	C33H50N7O18P3S	0		based on metacyc												
 trans-cinnamate	c	C9H7O2	-1		based on kegg	C00423	ChEBI:15669										
