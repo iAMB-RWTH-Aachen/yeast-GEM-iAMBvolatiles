@@ -12,7 +12,7 @@ To enjoy the full capabilities of `yeast-GEM` and its tracked development on Git
 Note: if you want to make contributions to `yeast-GEM` (see below) it is essential to clone or fork the repository.
 
 ## Installation and usage instructions
-Instructions on how to use the model (including [load/save](https://github.com/SysBioChalmers/yeast-GEM/blob/chore/branchRename/README.md#usage) in MATLAB or Python) are available [here](https://github.com/SysBioChalmers/yeast-GEM#installation), and also detailed under _Installation_  and _Usage_ in the `README.md` that can be found in the ZIP-file.
+Instructions on how to use the model (including [load/save](https://github.com/SysBioChalmers/yeast-GEM#model--usage) in MATLAB or Python) are available [here](https://github.com/SysBioChalmers/yeast-GEM#installation--usage), and also detailed under _Installation & usage_ in the `README.md` that can be found in the yeast-GEM ZIP-file (if downloaded instead of cloned).
 
 ## Feedback / help [![Join the chat at https://gitter.im/SysBioChalmers/yeast-GEM](https://badges.gitter.im/SysBioChalmers/yeast-GEM.svg)](https://gitter.im/SysBioChalmers/yeast-GEM?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
