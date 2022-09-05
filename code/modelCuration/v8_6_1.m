@@ -19,8 +19,8 @@ metsInfo = fullfile(dataDir,'DBnewRxnsMets.tsv');
 rxnsCoeffs = fullfile(dataDir,'DBnewRxnsCoeffs.tsv');
 rxnsInfo = fullfile(dataDir,'DBnewRxnsRxns.tsv');
 genesInfo = fullfile(dataDir,'DBnewRxnsGenes.tsv');
-newModel = curateMetsRxnsGenes(model,metsInfo,genesInfo,rxnsCoeffs,rxnsInfo);
-checkModelStruct(newModel,true,false)
+model = curateMetsRxnsGenes(model,metsInfo,genesInfo,rxnsCoeffs,rxnsInfo);
+checkModelStruct(model,true,false)
 
 %% DO NOT CHANGE OR REMOVE THE CODE BELOW THIS LINE.
 % Show some metrics:

@@ -110564,7 +110564,7 @@
           - sbo: "SBO:0000176"
     - !!omap
       - id: "r_4716"
-      - name: "2,5-dioxopentanoate:NADP+ 5-oxidoreductase""
+      - name: "2,5-dioxopentanoate:NADP+ 5-oxidoreductase"
       - metabolites: !!omap
           - s_0180: 1
           - s_0794: 2
