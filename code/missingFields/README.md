@@ -1,5 +1,3 @@
-## Missing Fields
+## Missing fields
 
-Scripts for adding fields to the model.
-
-**NOTE:** These scripts are provided as documentation + eventual re-use for developers. They are NOT intended to be used by regular users.
+Various scripts for adding and curating various annotation fields to the model, that are useful for model curation. These functions should be written in a generic format, so that they could be reused for future curations.

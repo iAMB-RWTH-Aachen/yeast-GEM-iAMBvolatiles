@@ -12,13 +12,12 @@ function findDuplicatedRxns(model)
 for i = 1:length(model.rxns)-1
     for j = i+1:length(model.rxns)
         if isequal(model.S(:,i),model.S(:,j)) || isequal(model.S(:,i),-model.S(:,j))
-            printRxnFormula(model,model.rxns(i),true,true,true);
+            constructEquations(model,model.rxns(i));
             disp(['Name: ' model.rxnNames{i} ' - GPR: ' model.grRules{i} ' - LB=' num2str(model.lb(i)) ' - UB=' num2str(model.ub(i))])
-            printRxnFormula(model,model.rxns(j),true,true,true);
+            constructEquations(model,model.rxns(j));
             disp(['Name: ' model.rxnNames{j} ' - GPR: ' model.grRules{j} ' - LB=' num2str(model.lb(j)) ' - UB=' num2str(model.ub(j))])
             disp(" ")
         end
     end
 end
-
 end

@@ -1,8 +1,8 @@
 function model = getEarlierModelVersion(version,verbose)
 % getEarlierModelVersion
 %   Loads an earlier model version from the local git repository history,
-%   and removes any mention of its version from model.id.
-%   Requires that the yeast-GEM repository is cloned via git.
+%   and removes any mention of its version from model.id. Requires that
+%   the yeast-GEM repository is cloned via git.
 %
 %   version     either 'main' or 'develop' for the latest model file from
 %               the specified branch. Can alternatively be a specific model
@@ -11,7 +11,7 @@ function model = getEarlierModelVersion(version,verbose)
 %   verbose     if true, the model version (as obtained from model.id) is
 %               printed (opt, default true).
 %
-%   Usage: getEarlierModelVersion(bumpType)
+%   Usage: model = getEarlierModelVersion(version,verbose)
 %
 
 if nargin<2
@@ -49,4 +49,5 @@ if verbose
     disp(['Loaded model version: ''' regexprep(model.id,'yeastGEM_v?','') ''''])
 end
 
+model.id='yeastGEM';
 end

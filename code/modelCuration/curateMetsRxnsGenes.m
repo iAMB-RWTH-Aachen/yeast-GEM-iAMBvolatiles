@@ -36,7 +36,18 @@ function newModel=curateMetsRxnsGenes(model,metsInfo,genesInfo,rxnsCoeffs,rxnsIn
 %   Output:
 %       newModel    curated RAVEN model structure
 
+if nargin==4
+    error('Provide both a ''rxnsInfo'' and a ''rxnsCoeffs'' file')
+end
+if nargin<4
+    rxnsInfo='none';
+    rxnsCoeffs='none';
+end
+if nargin<3
+    genesInfo='none';
+end
 newModel=model;
+
 %% Metabolites
 if ~strcmp(metsInfo,'none')
     fid = fopen(metsInfo);
@@ -308,6 +319,9 @@ end
 emptyMiriam     =   all(cellfun(@isempty,miriamValues),1);
 miriamName(emptyMiriam)     = [];
 miriamValues(:,emptyMiriam) = [];
+if ~isfield(newModel,[type 'Miriams']);
+    newModel.([type 'Miriams'])=cell(numel(newModel.([type 's'])),1);
+end
 if ~isempty(miriamName)
     for i=1:numel(miriamName)
         newModel = editMiriam(newModel,type,modelIndex,miriamName{i},miriamValues(:,i),'replace');

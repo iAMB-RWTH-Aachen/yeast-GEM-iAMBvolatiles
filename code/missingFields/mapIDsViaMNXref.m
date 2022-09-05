@@ -59,10 +59,10 @@ catch
     disp([toolbox ' toolbox cannot be found'])
 end
 %Check if this branch is feat/add_MetaNetX
-currentBranch = git('rev-parse --abbrev-ref HEAD');
+[~,currentBranch] = system('git rev-parse --abbrev-ref HEAD');
 if ~strcmp(currentBranch,'feat/add_MetaNetX')
-    git checkout feat/add_MetaNetX
-    currentBranch = git('rev-parse --abbrev-ref HEAD');
+    system('git checkout feat/add_MetaNetX');
+    [~,currentBranch] = system('git rev-parse --abbrev-ref HEAD');
     if ~strcmp(currentBranch,'feat/add_MetaNetX')
         error(['ERROR: branch:add_MetaNetX not exists. Check-out the RAVEN toolbox:https://github.com/SysBioChalmers/RAVEN'])
     end
@@ -70,7 +70,7 @@ end
 cd external/MetaNetX/
 load('MNXref.mat');
 % swich back to the main branch of RAVEN
-git checkout main
+system('git checkout main');
 cd(currentPath);
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

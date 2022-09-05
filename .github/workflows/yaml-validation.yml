@@ -35,5 +35,5 @@ jobs:
 
     - name: Import with cobrapy
       run: |
-        pip install -r requirements/ci-requirements.txt
+        pip install -r code/requirements/ci-requirements.txt
         python -c "import cobra ; cobra.io.load_yaml_model('model/yeast-GEM.yml')"

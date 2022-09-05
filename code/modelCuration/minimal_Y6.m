@@ -8,7 +8,7 @@ function model = minimal_Y6(model)
 % start with a clean slate: set all exchange reactions to upper bound = 1000
 % and lower bound = 0 (ie, unconstrained excretion, no uptake)
 
-exchangeRxns = findExcRxns(model);
+[~,exchangeRxns] = getExchangeRxns(model,'out');
 model.lb(exchangeRxns) = 0;
 model.ub(exchangeRxns) = 1000;
 
@@ -34,9 +34,9 @@ blockedExchanges = {'r_1663'; ... % bicarbonate exchange
 
 glucoseExchange = {'r_1714'};     % D-glucose exchange
 
-uptakeRxnIndexes     = findRxnIDs(model,desiredExchanges);
-glucoseExchangeIndex = findRxnIDs(model,glucoseExchange);
-BlockedRxnIndex      = findRxnIDs(model,blockedExchanges);
+uptakeRxnIndexes     = getIndexes(model,desiredExchanges,'rxns');
+glucoseExchangeIndex = getIndexes(model,glucoseExchange,'rxns');
+BlockedRxnIndex      = getIndexes(model,blockedExchanges,'rxns');
 
 if length(find(uptakeRxnIndexes~= 0)) ~= 15
     warning('Not all exchange reactions were found.')

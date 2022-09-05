@@ -35,6 +35,7 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+.idea
 
 # Matlab generated files #
 ##########################
@@ -51,7 +52,10 @@ helpsearch*/
 *.pyc
 *.env
 
-# Non-complying tables #
-########################
-*.xls
+# Non-complying tables and files #
+##################################
+*.xls*
 *.tab
+*.doc*
+*.ppt*
+*.bak

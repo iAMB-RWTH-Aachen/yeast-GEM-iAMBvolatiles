@@ -1,4 +1,4 @@
-function [accurancy,tp,tn,fn,fp] = essentialGenes
+function [accuracy,tp,tn,fn,fp] = essentialGenes(model)
 % essentialGenes
 %   Modify media + find essential genes in model. Adapted from:
 %   https://doi.org/10.1371/journal.pcbi.1004530
@@ -12,11 +12,11 @@ function [accurancy,tp,tn,fn,fp] = essentialGenes
 %   Usage: [accurancy,tp,tn,fn,fp] = essentialGenes
 %
 
-initCobraToolbox
-cd ..
-model = loadYeastModel;
-model = ravenCobraWrapper(model);
-cd modelTests
+if nargin<1;
+    cd ..
+    model = loadYeastModel;
+    cd modelTests
+end
 ko_tol = 1e-6;
 
 %constraints from genotype: check the genotype of the strains used in deletion experiment
@@ -41,7 +41,10 @@ exp_viable = setdiff(model.genes,inviableORFsAll);
 exp_viable = intersect(exp_viable,verifiedORFs);
 
 %calculate the growth rate after the single gene deletion using the original model and update model
-grRatio = singleGeneDeletion(model);
+[genes, fluxes, originalGenes, details, grRatioMuts]=findGeneDeletions(model,'sgd','fba');
+grRatio=ones(1,numel(model.genes));
+grRatio(genes)=grRatioMuts;
+
 mod_viable  = model.genes(grRatio >= ko_tol);
 mod_viable = intersect(mod_viable,verifiedORFs);
 mod_inviable = model.genes(grRatio < ko_tol );
@@ -59,7 +62,7 @@ fn = intersect(exp_viable,mod_inviable); n_fn = length(fn);
 %compare the prediction performances of two models
 %prediction accuracy was used to evaluate the quality of model update in
 %each step
-accurancy = (n_tp+n_tn)/(n_tp+n_tn+n_fn+n_fp);
+accuracy = (n_tp+n_tn)/(n_tp+n_tn+n_fn+n_fp);
 sensitivity = (100*n_tp/(n_tp+n_fn));
 specificity = (100*n_tn/(n_tn+n_fp));
 positivePredictive = (100*n_tp/(n_tp+n_fp));
@@ -75,7 +78,7 @@ function model = complete_Y7(model)
 
     % start with a clean slate: set all exchange reactions to upper bound =
     % 1000 and lower bound = 0 (ie, unconstrained excretion, no uptake)
-    exchangeRxns = findExcRxns(model);
+    [~, exchangeRxns] = getExchangeRxns(model);
     model.lb(exchangeRxns) = 0;
     model.ub(exchangeRxns) = 1000;
 
@@ -106,12 +109,9 @@ function model = complete_Y7(model)
                     'r_4600'; ... % Ca(2+) exchange
                     'r_2020' };
 
-    constrainedUptakeRxnIndexes = findRxnIDs(model,constrainedUptake);
-    glucoseExchangeIndex = findRxnIDs(model,glucoseExchange);
-    unconstrainedUptakeRxnIndexes = findRxnIDs(model,unconstrainedUptake);
-    model.lb(constrainedUptakeRxnIndexes) = -0.5;
-    model.lb(glucoseExchangeIndex) = -20;
-    model.lb(unconstrainedUptakeRxnIndexes) = -1000;
+    model=setParam(model,'lb',constrainedUptake,-0.5);
+    model=setParam(model,'lb',glucoseExchange,-20);
+    model=setParam(model,'lb',unconstrainedUptake,-1000);
 end
 
 function genes = inviableORFs

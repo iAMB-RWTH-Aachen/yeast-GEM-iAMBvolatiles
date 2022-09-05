@@ -1,14 +1,18 @@
+function R2 = growth(model_origin)
 % This is for growth test: Fig S4c for yeast8 paper
-% here we use several chemostat data: 'N-limited aerboic' 'C-limited
+% here we use several chemostat data: 'N-limited aerobic' 'C-limited
 % aerobic' 'C-limited anaerobic' 'N-limited anaerobic'
 % when simulating N-limited condition, protein content was rescaled, and
 % when simulate anaerobic condtion, heme NADH NADP NADPH NAD were rescaled
 % to be 0.
 
-cd ..
-model = loadYeastModel;
-model_origin = model;
-cd otherChanges/
+if nargin<1
+    cd ..
+    model_origin = loadYeastModel;
+    cd otherChanges/
+else
+    cd ../otherChanges/
+end
 
 %Load chemostat data:
 fid = fopen('../../data/physiology/chemostatData_Tobias2013.tsv','r');
@@ -48,47 +52,54 @@ y = x;
 plot(x,y,'--','MarkerSize',6,'Color',[64,64,64]/256)
 xlabel('Experimental growth rate [1/h]','FontSize',14,'FontName','Helvetica')
 ylabel('In silico growth rate [1/h]','FontSize',14,'FontName','Helvetica')
-legend(b,'N-limited aerboic','C-limited aerobic','C-limited anaerobic','N-limited anaerobic','Location','northwest')
+legend(b,'N-limited aerobic','C-limited aerobic','C-limited anaerobic','N-limited anaerobic','Location','northwest')
 meanerror = sum(([exp_data1(:,4);exp_data2(:,4);exp_data3(:,4);exp_data4(:,4)]-[mod_data1(:,4);mod_data2(:,4);mod_data3(:,4);mod_data4(:,4)]).^2)/32;
-text(0.4,0.1,['meanerror:',num2str(meanerror*100),'%'])
+text(0.25,0.1,['meanerror:',num2str(meanerror*100),'%'])
 hold off
+R2=corrcoef([exp_data1(:,4);exp_data2(:,4);exp_data3(:,4);exp_data4(:,4)],[mod_data1(:,4);mod_data2(:,4);mod_data3(:,4);mod_data4(:,4)]);
+R2=R2(2)^2;
+end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 function [mod_data,solresult] = simulateChemostat(model_origin,exp_data,mode1,mode2)
-model = model_origin;
 %Relevant positions:
-pos(1) = find(strcmp(model.rxns,'r_1714')); %glc
-pos(2) = find(strcmp(model.rxns,'r_1992')); %O2
-pos(3) = find(strcmp(model.rxns,'r_1654')); %NH3
-pos(4) = find(strcmp(model.rxns,'r_2111')); %growth
+pos(1) = find(strcmp(model_origin.rxns,'r_1714')); %glc
+pos(2) = find(strcmp(model_origin.rxns,'r_1992')); %O2
+pos(3) = find(strcmp(model_origin.rxns,'r_1654')); %NH3
+pos(4) = find(strcmp(model_origin.rxns,'r_2111')); %growth
 
 %Simulate chemostats:
 mod_data = zeros(size(exp_data));
-solresult = zeros(length(model.rxns),length(exp_data(:,1)));
+solresult = zeros(length(model_origin.rxns),length(exp_data(:,1)));
 if strcmp(mode2,'N')
-    model = scaleBioMass(model,'protein',0.289);
-    model = scaleBioMass(model,'lipid',0.048);
-    model = scaleBioMass(model,'RNA',0.077,'carbohydrate');
+    model_origin = scaleBioMass(model_origin,'protein',0.289,'',false);
+    model_origin = scaleBioMass(model_origin,'lipid',0.048,'',false);
+    model_origin = scaleBioMass(model_origin,'RNA',0.077,'carbohydrate',false);
 end
 if mode1 == 2
-    model = anaerobicModel(model);
+    model_origin = anaerobicModel(model_origin);
 end
 for i = 1:length(exp_data(:,1))
-    model_test= model;
-    %Fix glucose uptake rate and maxmize growth:
+    model_test= model_origin;
+    %Fix glucose uptake rate and maximize growth:
     for j = 1:length(exp_data(1,:))-1
 
         if abs(exp_data(i,j))==1000
             model_test = setParam(model_test,'lb',model_test.rxns(pos(j)),-exp_data(i,j));
         else
-            model_test = setParam(model_test,'ub',model_test.rxns(pos(j)),-exp_data(i,j));
+            model_test = setParam(model_test,'eq',model_test.rxns(pos(j)),-exp_data(i,j));
         end
     end
 
     model_test = setParam(model_test,'obj',model_test.rxns(pos(4)),1);
     sol        = solveLP(model_test,1);
     %Store relevant variables:
-    mod_data(i,:) = abs(sol.x(pos)');
-    solresult(:,i) = sol.x;
+    try
+        mod_data(i,:) = abs(sol.x(pos)');
+        solresult(:,i) = sol.x;
+    catch
+        mod_data(i,:) = 0;
+        solresult(:,i) = 0;
+    end
 end
 end

@@ -1,6 +1,6 @@
 ## Contributor guidelines
 
-First of all, thank you for contributing to yeast-GEM!! Anybody is welcome to contribute, but please abide by the following guidelines.
+First of all, thank you for contributing to yeast-GEM! Anybody is welcome to contribute, but please abide by the following guidelines.
 
 You can contribute in 2 main ways: by creating issues, and by sending pull requests (PRs) with additions, deletions, corrections, etc. to the model.
 
@@ -14,7 +14,7 @@ Report an issue at https://github.com/SysBioChalmers/yeast-GEM/issues if you not
 * Lacking documentation.
 * Any type of feedback.
 
-If you are unsure about the issue, consider asking first in our [Gitter chat room](https://gitter.im/SysBioChalmers/yeast-GEM).
+If you are unsure about the issue, consider asking first in our [Gitter chat room](https://gitter.im/SysBioChalmers/yeast-GEM) or [GitHub Discussion forum](https://github.com/SysBioChalmers/yeast-GEM/discussions).
 
 When creating the issue, please make sure:
 
@@ -29,11 +29,11 @@ Finally, if you like yeast-GEM please remember to 'star' our Github page (click 
 
 ### Contributing to the model
 
-Want to contribute to the model with some additions or improvements? Consider starting by raising an issue and assign it to yourself to describe what you want to achieve. This way, we reduce the risk of duplicated efforts and you may also get suggestions on how to best proceed, e.g. there may be half-finished work in some branch that you could start with. Also, feel free to browse our [open issues](https://github.com/SysBioChalmers/yeast-GEM/issues) and our [ongoing projects](https://github.com/SysBioChalmers/yeast-GEM/projects): Anything tagged with "help wanted" is open to whoever wants to implement it!
+Do you want to contribute to the model with some additions or improvements? Consider starting by raising an issue and assign it to yourself to describe what you want to achieve. This way, we reduce the risk of duplicated efforts and you may also get suggestions on how to best proceed, e.g. there may be half-finished work in some branch that you could start with. Also, feel free to browse our [open issues](https://github.com/SysBioChalmers/yeast-GEM/issues) and our [ongoing projects](https://github.com/SysBioChalmers/yeast-GEM/projects): Anything tagged with "help wanted" is open to whoever wants to implement it!
 
-Here's how to set up yeast-GEM for local development to contribute smaller features or changes that you can implement yourself:
+Here is how to set up yeast-GEM for local development to contribute smaller features or changes that you can implement yourself:
 
-1. First of all, make sure that you have all [requirements](https://github.com/SysBioChalmers/yeast-GEM#required-software---contributor) for contributing to yeast-GEM. Note that COBRA and RAVEN should be cloned in your computer and not just downloaded.
+1. First of all, make sure that you have all [requirements](https://github.com/SysBioChalmers/yeast-GEM#developer) for contributing to yeast-GEM.
 
 2. Fork the yeast-GEM repository on GitHub (go to https://github.com/SysBioChalmers/yeast-GEM & click on the upper right corner).
 
@@ -53,15 +53,13 @@ Here's how to set up yeast-GEM for local development to contribute smaller featu
     ```
 
 6. Now you can make your changes locally!
-    * Always make your changes in Matlab and never directly editing the model files. For loading the model use `loadYeastModel.m`, and for saving the model use `saveYeastModel.m`. The latter will ensure all 3 versions of the model (`.xml`, `.yml` & `.txt`) get updated in the same way.
-    * If your changes are minor (e.g. a single chemical formula you wish to correct), you can do it directly from the command line.
-    * If your changes are not so small and require several steps, create a script that loads the model, reads data (if applicable), changes the model accordingly, and saves the model back.
-    * Each script should start with a commented section describing the script, explaining the parameters, and indicating your name and the date it was written. Existing functions can clarify what style should be used.
+    * Always make your changes in MATLAB and never directly editing the model files. For loading the model use `loadYeastModel.m`, and for saving the model use `saveYeastModel.m`. The latter will ensure all 3 versions of the model (`.xml`, `.yml` & `.txt`) get updated in the same way.
+    * Curations to the model are consolidated in scripts that can convert a model from one yeast-GEM release (=version) to the next. Therefore, use the `/code/modelCuration/TEMPLATEcuration.m` file, or contribute directly to an existing `v$VERSION.m` script, where `$VERSION` matches the most recent yeast-GEM release. If the most recent release is 8.6.0, there will be a `/code/modelCuration/v8_6_0.m` script that consolidates curations to be applied to release 8.6.0.
+    * See the `TEMPLATEcuration.m` script with more description on how to use this file. Look at previous curations files (e.g. `v8_6_0.m`) to get an idea of how this works.
     * As much as possible follow the model conventions:
-      - For new metabolites and/or reactions, please use `/code/otherChanges/getNewIndex.m` for obtaining new ids.
       - For metabolite and/or reaction names, please avoid any unconventional characters (e.g. Greek letters).
       - For new genes, please use as id the [systematic names from SGD](http://seq.yeastgenome.org/help/community/nomenclature-conventions).
-    * Store scripts in the appropriate folder in `/code` and data (as `.tsv` files) in the appropriate folder in `/data`. If you think no folder is adequate for your script/data, feel free to create your own folder. Note that binary data such as `.mat` structures or `.xls` tables cannot be stored in the repo (as they cannot be version-controlled, and they increment too much the size of the repo).
+    * Store generic scripts in the appropriate folder in `/code` and data (as `.tsv` files) in the appropriate folder in `/data`. If a data file is just to apply one round of curation (for instance a table with selected gene associations to be corrected), it should be stored in the appropriate subfolder in `/code/modelCuration`. If you think no folder is adequate for your script/data, feel free to create your own folder. Note that binary data such as `.mat` structures or `.xls` tables cannot be stored in the repo (as they cannot be version-controlled, and they increment too much the size of the repo).
     * When you are done making changes, review locally your changes with `git diff` or any git client, to make sure you are modifying the model as you intended.
 
 7. Commit your changes and push your branch to GitHub.

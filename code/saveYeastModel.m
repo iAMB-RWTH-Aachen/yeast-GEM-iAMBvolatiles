@@ -84,7 +84,7 @@ copyfile('../README.md','backup.md')
 fin  = fopen('backup.md','r');
 fout = fopen('../README.md','w');
 newStats = ['| $1 | ' datestr(now,'dd-mmm-yyyy') ' | ' modelVersion ' | ' nRxns ' | ' nMets ' | ' nGenes ' |'];
-searchStats = '^\| (\_Saccharomyces cerevisiae\_) \| \d{2}-\D{3}-\d{4} \| (\d+\.\d+\.\d+|develop) \| \d+ \| \d+ \| \d+ \|';
+searchStats = '^\| (\_Saccharomyces cerevisiae\_) \| \d{2}-\D+-\d{4} \| (\d+\.\d+\.\d+|develop) \| \d+ \| \d+ \| \d+ \|';
 while ~feof(fin)
     str = fgets(fin);
     inline = regexprep(str,searchStats,newStats);

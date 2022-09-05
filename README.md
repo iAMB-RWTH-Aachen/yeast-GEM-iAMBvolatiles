@@ -33,7 +33,7 @@ This repository contains the current consensus genome-scale metabolic model of _
 
 | Taxonomy | Latest update | Version | Reactions | Metabolites | Genes |
 |:-------|:--------------|:------|:------|:----------|:-----|
-| _Saccharomyces cerevisiae_ | 14-March-2022 | develop | 4058 | 2742 | 1150 |
+| _Saccharomyces cerevisiae_ | 15-Jun-2022 | develop | 4063 | 2744 | 1163 |
 
 # Installation & usage
 
@@ -50,27 +50,26 @@ You can obtained the model by any of the following methods:
 
 If you want to use the model for your own model simulations, you can use **any software** that accepts SBML L3V1 FBCv3 formatted model files. This includes any of the following:
 * MATLAB-based
-  * [RAVEN Toolbox](https://github.com/SysBioChalmers/RAVEN) version 2.6.1 or later (recommended)  
+  * [RAVEN Toolbox](https://github.com/SysBioChalmers/RAVEN) version 2.7.1 or later (recommended)  
   * [COBRA Toolbox](https://github.com/opencobra/cobratoolbox)
 
 * Python-based
   * [cobrapy](https://github.com/opencobra/cobrapy)  
 
-Please see the installation instructions for each software package. You may need to install [libSBML](https://sourceforge.net/projects/sbml/files/libsbml/5.19.0/stable/MATLAB%20interface/) and an LP-solver (e.g. [Gurobi](https://www.gurobi.com/downloads/gurobi-optimizer-eula/)).
+Please see the installation instructions for each software package.
 
 ### Developer
 
 * MATLAB-based  
   If you want to contribute to the development of yeast-GEM, or otherwise want to run any of the [provided](https://github.com/SysBioChalmers/yeast-GEM/tree/main/code) MATLAB functions, then the following software is required:
-  * [RAVEN Toolbox](https://github.com/SysBioChalmers/RAVEN) version 2.6.1 or later
-  * [git wrapper](https://github.com/manur/MATLAB-git)  
+  * [RAVEN Toolbox](https://github.com/SysBioChalmers/RAVEN) version 2.7.1 or later
 
 * Python-based  
   Contribution via python (cobrapy) is not yet functional. In essence, if you can retain the same format of the model files, you can still contribute to the development of yeast-GEM. However, you cannot use the MATLAB functions.
 
   If you want to use any of the [provided](https://github.com/SysBioChalmers/yeast-GEM/tree/main/code) Python functions, you may create an environment with all requirements:
   ```bash
-  pip install -r requirements/requirements.txt  # installs all dependencies
+  pip install -r code/requirements/requirements.txt  # installs all dependencies
   touch .env                                    # creates a .env file for locating the root
   ```
 
