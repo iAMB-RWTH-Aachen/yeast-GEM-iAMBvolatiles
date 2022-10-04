@@ -3,7 +3,7 @@
 - metaData:
     id: "yeastGEM_develop"
     name: "The Consensus Genome-Scale Metabolic Model of Yeast"
-    date: "2022-09-23"
+    date: "2022-10-04"
     givenName: "Eduard"
     familyName: "Kerkhoven"
     email: "eduardk@chalmers.se"
@@ -30403,30 +30403,6 @@
           - sbo: "SBO:0000247"
     - !!omap
       - id: "s_4310"
-      - name: "3-sulfolactate"
-      - compartment: "m"
-      - formula: "C3H6O6S"
-      - charge: 0
-      - annotation: !!omap
-          - chebi: "CHEBI:48291"
-          - kegg.compound: "C11537"
-          - metanetx.chemical: "MNXM530"
-          - pubchem.compound: "443250"
-          - sbo: "SBO:0000247"
-    - !!omap
-      - id: "s_4311"
-      - name: "3-sulfopyruvate"
-      - compartment: "m"
-      - formula: "C3H4O6S"
-      - charge: 0
-      - annotation: !!omap
-          - chebi: "CHEBI:16894"
-          - kegg.compound: "C05528"
-          - metanetx.chemical: "MNXM594"
-          - pubchem.compound: "440717"
-          - sbo: "SBO:0000247"
-    - !!omap
-      - id: "s_4312"
       - name: "cadaverine"
       - compartment: "c"
       - formula: "C5H16N2"
@@ -30441,7 +30417,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd01155"
     - !!omap
-      - id: "s_4313"
+      - id: "s_4311"
       - name: "cadaverine"
       - compartment: "n"
       - formula: "C5H16N2"
@@ -30456,7 +30432,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd01155"
     - !!omap
-      - id: "s_4314"
+      - id: "s_4312"
       - name: "5'-S-methyl-5'-thioadenosine"
       - compartment: "n"
       - formula: "C11H15N5O3S"
@@ -30471,7 +30447,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00147"
     - !!omap
-      - id: "s_4315"
+      - id: "s_4313"
       - name: "5-methyltetrahydrofolate"
       - compartment: "m"
       - formula: "C20H23N7O6"
@@ -30486,7 +30462,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00345"
     - !!omap
-      - id: "s_4316"
+      - id: "s_4314"
       - name: "S-adenosylmethioninamine"
       - compartment: "n"
       - formula: "C14H24N6O3S"
@@ -30501,7 +30477,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00837"
     - !!omap
-      - id: "s_4317"
+      - id: "s_4315"
       - name: "aminopropylcadaverine"
       - compartment: "n"
       - formula: "C8H24N3"
@@ -30515,7 +30491,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd16379"
     - !!omap
-      - id: "s_4318"
+      - id: "s_4316"
       - name: "aminopropylcadaverine"
       - compartment: "c"
       - formula: "C8H24N3"
@@ -30529,7 +30505,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd16379"
     - !!omap
-      - id: "s_4319"
+      - id: "s_4317"
       - name: "2-(2-carboxy-4-methylthiazol-5-yl)ethyl phosphate"
       - compartment: "c"
       - formula: "C7H7NO6PS"
@@ -30540,7 +30516,7 @@
           - pubchem.compound: "46942369"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4320"
+      - id: "s_4318"
       - name: "2-hydroxyglutarate"
       - compartment: "m"
       - formula: "C5H6O5"
@@ -30553,7 +30529,7 @@
           - pubchem.compound: "4609868"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4321"
+      - id: "s_4319"
       - name: "dehydroalanine"
       - compartment: "m"
       - formula: "C3H5NO2"
@@ -30567,7 +30543,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd01495"
     - !!omap
-      - id: "s_4322"
+      - id: "s_4320"
       - name: "D-ribofuranose"
       - compartment: "c"
       - formula: "C5H10O5"
@@ -30579,7 +30555,7 @@
           - pubchem.compound: "5779"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4323"
+      - id: "s_4321"
       - name: "D-ribofuranose"
       - compartment: "n"
       - formula: "C5H10O5"
@@ -30591,7 +30567,7 @@
           - pubchem.compound: "5779"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4324"
+      - id: "s_4322"
       - name: "farnesyl diphosphate"
       - compartment: "v"
       - formula: "C15H25O7P2"
@@ -30603,7 +30579,7 @@
           - pubchem.compound: "445713"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4325"
+      - id: "s_4323"
       - name: "farnesol"
       - compartment: "c"
       - formula: "C15H26O"
@@ -30614,7 +30590,7 @@
           - pubchem.compound: "445070"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4326"
+      - id: "s_4324"
       - name: "farnesol"
       - compartment: "v"
       - formula: "C15H26O"
@@ -30625,7 +30601,7 @@
           - pubchem.compound: "445070"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4327"
+      - id: "s_4325"
       - name: "D-ribulose"
       - compartment: "c"
       - formula: "C5H10O5"
@@ -30639,7 +30615,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00258"
     - !!omap
-      - id: "s_4328"
+      - id: "s_4326"
       - name: "cytosine"
       - compartment: "n"
       - formula: "C4H5N3O"
@@ -30654,7 +30630,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00307"
     - !!omap
-      - id: "s_4329"
+      - id: "s_4327"
       - name: "diphosphate"
       - compartment: "v"
       - formula: "HO7P2"
@@ -30667,7 +30643,7 @@
           - pubchem.compound: "1023"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4330"
+      - id: "s_4328"
       - name: "3-demethylubiquinol-6"
       - compartment: "m"
       - formula: "C38H58O4"
@@ -30678,7 +30654,7 @@
           - pubchem.compound: "25246205"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4331"
+      - id: "s_4329"
       - name: "oxalosuccinate"
       - compartment: "m"
       - formula: "C6H3O7"
@@ -30692,7 +30668,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd03187"
     - !!omap
-      - id: "s_4332"
+      - id: "s_4330"
       - name: "2-deoxy-D-ribose 1-phosphate"
       - compartment: "c"
       - formula: "C5H9O7P"
@@ -30707,7 +30683,7 @@
           - reactome: "112032"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4333"
+      - id: "s_4331"
       - name: "glutaryl-CoA"
       - compartment: "m"
       - formula: "C26H37N7O19P3S"
@@ -30719,23 +30695,7 @@
           - pubchem.compound: "45266604"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4334"
-      - name: "UTP"
-      - compartment: "n"
-      - formula: "C9H11N2O15P3"
-      - charge: -4
-      - annotation: !!omap
-          - bigg.metabolite: "utp"
-          - biocyc: "UTP"
-          - chebi: "CHEBI:46398"
-          - kegg.compound: "C00075"
-          - metanetx.chemical: "MNXM121"
-          - pubchem.compound: "7058168"
-          - reactome: "29494"
-          - sbo: "SBO:0000247"
-          - seed.compound: "cpd00062"
-    - !!omap
-      - id: "s_4335"
+      - id: "s_4332"
       - name: "sucrose 6-phosphate"
       - compartment: "c"
       - formula: "C12H21O14P"
@@ -30747,7 +30707,7 @@
           - pubchem.compound: "644101"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4336"
+      - id: "s_4333"
       - name: "4-(2-amino-3-hydroxyphenyl)-2,4-dioxobutanoate"
       - compartment: "c"
       - formula: "C10H8NO5"
@@ -30759,7 +30719,7 @@
           - pubchem.compound: "440741"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4337"
+      - id: "s_4334"
       - name: "4-(2-amino-3-hydroxyphenyl)-2,4-dioxobutanoate"
       - compartment: "m"
       - formula: "C10H8NO5"
@@ -30771,7 +30731,7 @@
           - pubchem.compound: "440741"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4338"
+      - id: "s_4335"
       - name: "trans-oct-2-enoyl-CoA"
       - compartment: "m"
       - formula: "C29H44N7O17P3S"
@@ -30786,7 +30746,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd03130"
     - !!omap
-      - id: "s_4339"
+      - id: "s_4336"
       - name: "3-hydroxy-L-kynurenine"
       - compartment: "m"
       - formula: "C10H12N2O4"
@@ -30797,7 +30757,7 @@
           - pubchem.compound: "11811"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4340"
+      - id: "s_4337"
       - name: "3-hydroxyisobutyryl-CoA"
       - compartment: "m"
       - formula: "C25H38N7O18P3S"
@@ -30808,7 +30768,7 @@
           - metanetx.chemical: "MNXM728564"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4341"
+      - id: "s_4338"
       - name: "3-hydroxyisobutyrate"
       - compartment: "m"
       - formula: "C4H7O3"
@@ -30821,7 +30781,7 @@
           - pubchem.compound: "18637352"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4342"
+      - id: "s_4339"
       - name: "meso-2,3-butanediol"
       - compartment: "c"
       - formula: "C4H10O2"
@@ -30831,47 +30791,47 @@
           - metanetx.chemical: "MNXM9502"
           - pubchem.compound: "220010"
           - sbo: "SBO:0000247"
+    - !!omap
+      - id: "s_4340"
+      - name: "meso-2,3-butanediol"
+      - compartment: "n"
+      - formula: "C4H10O2"
+      - charge: 0
+      - annotation: !!omap
+          - kegg.compound: "C20657"
+          - metanetx.chemical: "MNXM9502"
+          - pubchem.compound: "220010"
+          - sbo: "SBO:0000247"
+    - !!omap
+      - id: "s_4341"
+      - name: "acetoin"
+      - compartment: "c"
+      - formula: "C4H8O2"
+      - charge: 0
+      - annotation: !!omap
+          - biocyc: "CPD-255"
+          - chebi: "CHEBI:15687"
+          - kegg.compound: "C01769 "
+          - metanetx.chemical: "MNXM1967"
+          - pubchem.compound: "447765"
+          - sbo: "SBO:0000247"
+          - seed.compound: "cpd01221"
+    - !!omap
+      - id: "s_4342"
+      - name: "acetoin"
+      - compartment: "n"
+      - formula: "C4H8O2"
+      - charge: 0
+      - annotation: !!omap
+          - biocyc: "CPD-255"
+          - chebi: "CHEBI:15687"
+          - kegg.compound: "C01769 "
+          - metanetx.chemical: "MNXM1967"
+          - pubchem.compound: "447765"
+          - sbo: "SBO:0000247"
+          - seed.compound: "cpd01221"
     - !!omap
       - id: "s_4343"
-      - name: "meso-2,3-butanediol"
-      - compartment: "n"
-      - formula: "C4H10O2"
-      - charge: 0
-      - annotation: !!omap
-          - kegg.compound: "C20657"
-          - metanetx.chemical: "MNXM9502"
-          - pubchem.compound: "220010"
-          - sbo: "SBO:0000247"
-    - !!omap
-      - id: "s_4344"
-      - name: "acetoin"
-      - compartment: "c"
-      - formula: "C4H8O2"
-      - charge: 0
-      - annotation: !!omap
-          - biocyc: "CPD-255"
-          - chebi: "CHEBI:15687"
-          - kegg.compound: "C01769 "
-          - metanetx.chemical: "MNXM1967"
-          - pubchem.compound: "447765"
-          - sbo: "SBO:0000247"
-          - seed.compound: "cpd01221"
-    - !!omap
-      - id: "s_4345"
-      - name: "acetoin"
-      - compartment: "n"
-      - formula: "C4H8O2"
-      - charge: 0
-      - annotation: !!omap
-          - biocyc: "CPD-255"
-          - chebi: "CHEBI:15687"
-          - kegg.compound: "C01769 "
-          - metanetx.chemical: "MNXM1967"
-          - pubchem.compound: "447765"
-          - sbo: "SBO:0000247"
-          - seed.compound: "cpd01221"
-    - !!omap
-      - id: "s_4346"
       - name: "5-methylcytosine"
       - compartment: "c"
       - formula: "C5H7N3O"
@@ -30885,7 +30845,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd01587"
     - !!omap
-      - id: "s_4347"
+      - id: "s_4344"
       - name: "5-methylcytosine"
       - compartment: "n"
       - formula: "C5H7N3O"
@@ -30899,7 +30859,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd01588"
     - !!omap
-      - id: "s_4348"
+      - id: "s_4345"
       - name: "thymine"
       - compartment: "n"
       - formula: "C5H6N2O2"
@@ -30915,7 +30875,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00151"
     - !!omap
-      - id: "s_4349"
+      - id: "s_4346"
       - name: "thymine"
       - compartment: "c"
       - formula: "C5H6N2O2"
@@ -30931,7 +30891,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00151"
     - !!omap
-      - id: "s_4350"
+      - id: "s_4347"
       - name: "prenylated FMNH2"
       - compartment: "m"
       - formula: "C22H29N4O9P"
@@ -30943,7 +30903,7 @@
           - pubchem.compound: "102515050"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4351"
+      - id: "s_4348"
       - name: "3-sulfinylpyruvate"
       - compartment: "c"
       - formula: "C3H2O5S"
@@ -30955,7 +30915,7 @@
           - pubchem.compound: "110"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4352"
+      - id: "s_4349"
       - name: "3-sulfinylpyruvate"
       - compartment: "p"
       - formula: "C3H2O5S"
@@ -30967,7 +30927,7 @@
           - pubchem.compound: "110"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4353"
+      - id: "s_4350"
       - name: "folate"
       - compartment: "m"
       - formula: "C19H17N7O6"
@@ -30981,7 +30941,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00393"
     - !!omap
-      - id: "s_4354"
+      - id: "s_4351"
       - name: "3-sulfino-L-alanine"
       - compartment: "p"
       - formula: "C3H6NO4S"
@@ -30997,7 +30957,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00467"
     - !!omap
-      - id: "s_4355"
+      - id: "s_4352"
       - name: "2-trans-dodecenoyl-CoA"
       - compartment: "m"
       - formula: "C33H52N7O17P3S"
@@ -31012,7 +30972,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd02060"
     - !!omap
-      - id: "s_4356"
+      - id: "s_4353"
       - name: "L-1-pyrroline-3-hydroxy-5-carboxylate"
       - compartment: "m"
       - formula: "C5H7NO3"
@@ -31024,7 +30984,7 @@
           - pubchem.compound: "11966267"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4357"
+      - id: "s_4354"
       - name: "lauroyl-CoA"
       - compartment: "m"
       - formula: "C33H54N7O17P3S"
@@ -31039,7 +30999,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd01260"
     - !!omap
-      - id: "s_4358"
+      - id: "s_4355"
       - name: "ITP"
       - compartment: "m"
       - formula: "C10H11N4O14P3"
@@ -31054,7 +31014,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00036"
     - !!omap
-      - id: "s_4359"
+      - id: "s_4356"
       - name: "IDP"
       - compartment: "m"
       - formula: "C10H11N4O11P2"
@@ -31069,7 +31029,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00090"
     - !!omap
-      - id: "s_4360"
+      - id: "s_4357"
       - name: "dTTP"
       - compartment: "gm"
       - formula: "C10H13N2O14P3"
@@ -31084,7 +31044,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00357"
     - !!omap
-      - id: "s_4361"
+      - id: "s_4358"
       - name: "dTDP"
       - compartment: "gm"
       - formula: "C10H13N2O11P2"
@@ -31099,7 +31059,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00297"
     - !!omap
-      - id: "s_4362"
+      - id: "s_4359"
       - name: "deamido-NAD(+)"
       - compartment: "p"
       - formula: "C21H24N6O15P2"
@@ -31114,7 +31074,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00638"
     - !!omap
-      - id: "s_4363"
+      - id: "s_4360"
       - name: "nicotinic acid D-ribonucleotide"
       - compartment: "p"
       - formula: "C11H12NO9P"
@@ -31129,7 +31089,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00873"
     - !!omap
-      - id: "s_4364"
+      - id: "s_4361"
       - name: "GTP"
       - compartment: "erm"
       - formula: "C10H12N5O14P3"
@@ -31144,7 +31104,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00038"
     - !!omap
-      - id: "s_4365"
+      - id: "s_4362"
       - name: "P(1),P(3)-bis(5'-adenosyl) triphosphate"
       - compartment: "c"
       - formula: "C20H24N10O16P3"
@@ -31158,7 +31118,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd03705"
     - !!omap
-      - id: "s_4366"
+      - id: "s_4363"
       - name: "acetyl adenylate"
       - compartment: "m"
       - formula: "C12H15N5O8P"
@@ -31170,7 +31130,7 @@
           - pubchem.compound: "440867"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4367"
+      - id: "s_4364"
       - name: "D-phenylalanine"
       - compartment: "n"
       - formula: "C9H11NO2"
@@ -31184,7 +31144,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd01526"
     - !!omap
-      - id: "s_4368"
+      - id: "s_4365"
       - name: "N-acetyl-D-phenylalanine"
       - compartment: "n"
       - formula: "C11H13NO3"
@@ -31196,55 +31156,7 @@
           - pubchem.compound: "101184"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4369"
-      - name: "3-sulfolactate"
-      - compartment: "c"
-      - formula: "C3H6O6S"
-      - charge: 0
-      - annotation: !!omap
-          - chebi: "CHEBI:48291"
-          - kegg.compound: "C11537"
-          - metanetx.chemical: "MNXM530"
-          - pubchem.compound: "443250"
-          - sbo: "SBO:0000247"
-    - !!omap
-      - id: "s_4370"
-      - name: "3-sulfopyruvate"
-      - compartment: "c"
-      - formula: "C3H4O6S"
-      - charge: 0
-      - annotation: !!omap
-          - chebi: "CHEBI:16894"
-          - kegg.compound: "C05528"
-          - metanetx.chemical: "MNXM594"
-          - pubchem.compound: "440717"
-          - sbo: "SBO:0000247"
-    - !!omap
-      - id: "s_4371"
-      - name: "3-sulfolactate"
-      - compartment: "p"
-      - formula: "C3H6O6S"
-      - charge: 0
-      - annotation: !!omap
-          - chebi: "CHEBI:48291"
-          - kegg.compound: "C11537"
-          - metanetx.chemical: "MNXM530"
-          - pubchem.compound: "443250"
-          - sbo: "SBO:0000247"
-    - !!omap
-      - id: "s_4372"
-      - name: "3-sulfopyruvate"
-      - compartment: "p"
-      - formula: "C3H4O6S"
-      - charge: 0
-      - annotation: !!omap
-          - chebi: "CHEBI:16894"
-          - kegg.compound: "C05528"
-          - metanetx.chemical: "MNXM594"
-          - pubchem.compound: "440717"
-          - sbo: "SBO:0000247"
-    - !!omap
-      - id: "s_4373"
+      - id: "s_4366"
       - name: "dATP"
       - compartment: "m"
       - formula: "C10H12N5O12P3"
@@ -31256,7 +31168,7 @@
           - metanetx.chemical: "MNXM286"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4374"
+      - id: "s_4367"
       - name: "dADP"
       - compartment: "m"
       - formula: "C10H12N5O9P2"
@@ -31268,7 +31180,7 @@
           - metanetx.chemical: "MNXM374"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4375"
+      - id: "s_4368"
       - name: "oxalosuccinate"
       - compartment: "c"
       - formula: "C6H3O7"
@@ -31282,7 +31194,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd03187"
     - !!omap
-      - id: "s_4376"
+      - id: "s_4369"
       - name: "oxalosuccinate"
       - compartment: "p"
       - formula: "C6H3O7"
@@ -31296,7 +31208,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd03187"
     - !!omap
-      - id: "s_4377"
+      - id: "s_4370"
       - name: "pyruvate"
       - compartment: "p"
       - formula: "C3H3O3"
@@ -31308,7 +31220,7 @@
           - metanetx.chemical: "MNXM23"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4378"
+      - id: "s_4371"
       - name: "dGTP"
       - compartment: "p"
       - formula: "C10H12N5O13P3"
@@ -31320,7 +31232,7 @@
           - metanetx.chemical: "MNXM344"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4379"
+      - id: "s_4372"
       - name: "phosphoenolpyruvate"
       - compartment: "p"
       - formula: "C3H2O6P"
@@ -31332,7 +31244,7 @@
           - metanetx.chemical: "MNXM73"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4380"
+      - id: "s_4373"
       - name: "dGDP"
       - compartment: "p"
       - formula: "C10H12N5O10P2"
@@ -31344,7 +31256,7 @@
           - metanetx.chemical: "MNXM436"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4381"
+      - id: "s_4374"
       - name: "dGTP"
       - compartment: "m"
       - formula: "C10H12N5O13P3"
@@ -31356,7 +31268,7 @@
           - metanetx.chemical: "MNXM344"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4382"
+      - id: "s_4375"
       - name: "dGDP"
       - compartment: "m"
       - formula: "C10H12N5O10P2"
@@ -31368,7 +31280,7 @@
           - metanetx.chemical: "MNXM436"
           - sbo: "SBO:0000247"
     - !!omap
-      - id: "s_4383"
+      - id: "s_4376"
       - name: "3-sulfino-L-alanine"
       - compartment: "m"
       - formula: "C3H6NO4S"
@@ -31384,7 +31296,7 @@
           - sbo: "SBO:0000247"
           - seed.compound: "cpd00467"
     - !!omap
-      - id: "s_4384"
+      - id: "s_4377"
       - name: "3-sulfinylpyruvate"
       - compartment: "m"
       - formula: "C3H2O5S"
@@ -109509,13 +109421,16 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YKL067W"
       - eccodes: "2.7.4.6"
+      - references: "doi: 10.1016/0003-9861(91)90129-7;doi: 10.1007/s10863-006-9045-y;doi: 10.1021/bi00830a026"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
           - kegg.pathway: "Pyrimidine metabolism"
           - kegg.reaction: "R00139"
           - metanetx.reaction: "MNXR106405"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4712"
       - name: "P1,P3-bis(5'-adenosyl)-triphosphate adenylohydrolase"
@@ -109529,6 +109444,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YDR305C"
       - eccodes: "3.6.1.29"
+      - references: "doi: 10.1186/1471-2199-3-7;doi: 10.1128/JB.180.9.2345-2349.1998"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -109537,7 +109453,9 @@
           - kegg.reaction: "R00187"
           - metanetx.reaction: "MNXR96340"
           - rhea: "RHEA:13893"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4713"
       - name: "L-glutamate gamma-semialdehyde:NAD+ oxidoreductase"
@@ -109560,7 +109478,9 @@
           - kegg.reaction: "R00245"
           - metanetx.reaction: "MNXR103352"
           - rhea: "RHEA: 30238"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4714"
       - name: "GTP 8,9-hydrolase"
@@ -109579,7 +109499,9 @@
           - kegg.pathway: "Folate biosynthesis"
           - kegg.reaction: "R00428"
           - metanetx.reaction: "MNXR189537"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4715"
       - name: "GTP diphosphate-lyase (cyclizing; 3',5'-cyclic-GMP-forming)"
@@ -109593,6 +109515,7 @@
       - eccodes:
           - "4.6.1.1"
           - "4.6.1.2"
+      - references: "doi: 10.1016/0092-8674(85)90179-5"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -109601,7 +109524,9 @@
           - kegg.reaction: "R00434"
           - metanetx.reaction: "MNXR189648"
           - rhea: "RHEA:13665"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4716"
       - name: "ATP:cytidine 5'-phosphotransferase"
@@ -109617,6 +109542,7 @@
       - eccodes:
           - "2.7.1.48"
           - "2.7.1.213"
+      - references: "doi: 10.1007/s002940050482;doi: 10.1093/nar/18.17.5279"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
@@ -109625,7 +109551,9 @@
           - kegg.reaction: "R00513"
           - metanetx.reaction: "MNXR190860"
           - rhea: "RHEA:24674"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4717"
       - name: "(S)-ureidoglycolate urea-lyase (glyoxylate-forming)"
@@ -109637,6 +109565,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YIR032C"
       - eccodes: "4.3.2.3"
+      - references: "doi: 10.1128/mcb.5.9.2279-2288.1985"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -109645,7 +109574,9 @@
           - kegg.reaction: "R00776"
           - metanetx.reaction: "MNXR106681"
           - rhea: "RHEA:11304"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4718"
       - name: "acetyl adenylate:CoA acetyltransferase"
@@ -109659,13 +109590,16 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YLR153C or YAL054C"
       - eccodes: "6.2.1.1"
+      - references: "doi: 10.1016/j.molcel.2006.05.040;doi: 10.1074/jbc.271.46.28953"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
           - kegg.pathway: "Pyruvate metabolism"
           - kegg.reaction: "R00236"
           - metanetx.reaction: "MNXR189030"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4719"
       - name: "acetyl-CoA:propanoyl-CoA 2-C-acetyltransferase;"
@@ -109686,7 +109620,9 @@
           - biocyc: "METHYLACETOACETYLCOATHIOL-RXN"
           - kegg.pathway: "Valine, leucine and isoleucine metabolism"
           - kegg.reaction: "R00927"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4720"
       - name: "ATP:D-glyceraldehyde 3-phosphotransferase"
@@ -109700,6 +109636,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YML070W or YFL053W"
       - eccodes: "2.7.1.28"
+      - references: "By similarity"
       - subsystem:
           - "Fructose and mannose metabolism"
       - annotation: !!omap
@@ -109708,7 +109645,9 @@
           - kegg.reaction: "R01059"
           - metanetx.reaction: "MNXR146589"
           - rhea: "RHEA:13941"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
       - id: "r_4721"
       - name: "5-Methylcytosine aminohydrolase"
@@ -109716,12 +109655,13 @@
           - s_0800: -1
           - s_0808: -1
           - s_4291: 1
-          - s_4347: -1
-          - s_4348: 1
+          - s_4344: -1
+          - s_4345: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YPR062W"
       - eccodes: "3.5.4.1"
+      - references: "doi: 10.1007/s002940050482;doi: 10.1007/s002940050169"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
@@ -109730,7 +109670,9 @@
           - kegg.reaction: "R01411"
           - metanetx.reaction: "MNXR101425"
           - rhea: "RHEA:30759"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4722"
       - name: "adenosine:phosphate alpha-D-ribosyltransferase"
@@ -109743,6 +109685,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YLR209C"
       - eccodes: "2.4.2.1"
+      - references: "By similarity"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -109751,7 +109694,9 @@
           - kegg.reaction: "R01561"
           - metanetx.reaction: "MNXR133777"
           - rhea: "RHEA:27642"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
       - id: "r_4723"
       - name: "D-glucose 1-epimerase"
@@ -109762,6 +109707,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YBR019C"
       - eccodes: "5.1.3.3"
+      - references: "By similarity"
       - subsystem:
           - "Glycolysis / gluconeogenesis"
       - annotation: !!omap
@@ -109770,7 +109716,9 @@
           - kegg.reaction: "R01602"
           - metanetx.reaction: "MNXR107082"
           - rhea: "RHEA:10264"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4724"
       - name: "Glycerol:NAD+ oxidoreductase"
@@ -109786,6 +109734,7 @@
       - eccodes:
           - "1.1.1.21"
           - "1.1.1.72"
+      - references: "doi: 10.1046/j.1432-1033.2002.03296.x"
       - subsystem:
           - "Glycerolipid metabolism"
       - annotation: !!omap
@@ -109794,7 +109743,9 @@
           - kegg.reaction: "R01036"
           - metanetx.reaction: "MNXR95709"
           - rhea: "RHEA:30027"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4725"
       - name: "L-Homoserine:NAD+ oxidoreductase"
@@ -109815,7 +109766,9 @@
           - kegg.reaction: "R01773"
           - metanetx.reaction: "MNXR100735"
           - rhea: "RHEA:15757"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4726"
       - name: "L-Kynurenine:2-oxoglutarate aminotransferase"
@@ -109828,6 +109781,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YJL060W"
       - eccodes: "2.6.1.7"
+      - references: "By similarity"
       - subsystem:
           - "Tryptophan metabolism"
       - annotation: !!omap
@@ -109836,7 +109790,9 @@
           - kegg.reaction: "R01956"
           - metanetx.reaction: "MNXR100948"
           - rhea: "RHEA:20964"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
       - id: "r_4727"
       - name: "1,4-alpha-D-Glucan:1,4-alpha-D-glucan 6-alpha-D-(1,4-alpha-D-glucano)-transferase"
@@ -109854,7 +109810,9 @@
           - kegg.pathway: "Starch and sucrose metabolism"
           - kegg.reaction: "R02110"
           - metanetx.reaction: "MNXR147514"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4728"
       - name: "5,6,7,8-tetrahydrofolate:NAD+ oxidoreductase"
@@ -109868,13 +109826,16 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YOR236W"
       - eccodes: "1.5.1.3"
+      - references: "By similarity"
       - subsystem:
           - "Folate biosynthesis"
       - annotation: !!omap
           - kegg.pathway: "Folate biosynthesis"
           - kegg.reaction: "R00936"
           - metanetx.reaction: "MNXR190916"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
       - id: "r_4729"
       - name: "L-2-aminoadipate-6-semialdehyde:NADP+ 6-oxidoreductase;"
@@ -109894,7 +109855,9 @@
           - kegg.pathway: "Lysine biosynthesis"
           - kegg.reaction: "R03098"
           - metanetx.reaction: "MNXR107947"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4730"
       - name: "guanosine 3'-diphosphate 5'-triphosphate 5'-phosphohydrolase"
@@ -109918,7 +109881,9 @@
           - kegg.reaction: "R03409"
           - metanetx.reaction: "MNXR100099"
           - rhea: "RHEA:13073"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4731"
       - name: "acetyl-CoA:D-amino-acid N-acetyltransferase"
@@ -109931,12 +109896,15 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YEL066W or YPR193C"
       - eccodes: "2.3.1.36"
+      - references: "doi: 10.1007/s00203-004-0724-y"
       - subsystem:
           - "Phenylalanine metabolism"
       - annotation: !!omap
           - kegg.pathway: "Phenylalanine metabolism"
           - kegg.reaction: "R03903"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
       - id: "r_4732"
       - name: "1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide:pyrophosphate phosphoribosyltransferase"
@@ -109949,6 +109917,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YML022W or YDR441C"
       - eccodes: "2.4.2.7"
+      - references: "doi: 10.1016/s0167-4838(97)00068-x;doi: 10.1128/JB.181.1.347-352.1999"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -109957,7 +109926,9 @@
           - kegg.reaction: "R04378"
           - metanetx.reaction: "MNXR190167"
           - rhea: "RHEA:31135"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
       - id: "r_4733"
       - name: "O-Phospho-4-hydroxy-L-threonine:2-oxoglutarate aminotransferase"
@@ -109970,6 +109941,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YOR184W"
       - eccodes: "2.6.1.52"
+      - references: "By similarity"
       - subsystem:
           - "Vitamin B6 metabolism"
       - annotation: !!omap
@@ -109978,33 +109950,11 @@
           - kegg.reaction: "R05085"
           - metanetx.reaction: "MNXR102169"
           - rhea: "RHEA:16573"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
       - id: "r_4734"
-      - name: "(2R)-3-sulfolactate:NAD+ oxidoreductase"
-      - metabolites: !!omap
-          - s_0799: 1
-          - s_1200: -1
-          - s_1205: 1
-          - s_4310: -1
-          - s_4311: 1
-      - lower_bound: -1000
-      - upper_bound: 1000
-      - gene_reaction_rule: "YKL085W or YDL078C or YOL126C"
-      - eccodes:
-          - "1.1.1.37"
-          - "1.1.1.337"
-      - subsystem:
-          - "Cysteine and methionine metabolism"
-      - annotation: !!omap
-          - biocyc: "R230-RXN"
-          - kegg.pathway: "Cysteine and methionine metabolism"
-          - kegg.reaction: "R07136"
-          - metanetx.reaction: "MNXR110837"
-          - rhea: "RHEA:15533"
-          - sbo: "SBO:0000176"
-    - !!omap
-      - id: "r_4735"
       - name: "5-methyltetrahydrofolate:NAD+ oxidoreductase"
       - metabolites: !!omap
           - s_0306: 1
@@ -110024,16 +109974,18 @@
           - kegg.reaction: "R07168"
           - metanetx.reaction: "MNXR145716"
           - rhea: "RHEA:19821"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4736"
+      - id: "r_4735"
       - name: "S-adenosylmethioninamine:cadaverine 3-aminopropyltransferase"
       - metabolites: !!omap
           - s_0303: 1
           - s_0794: 1
           - s_1420: -1
-          - s_4312: -1
-          - s_4318: 1
+          - s_4310: -1
+          - s_4316: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YPR069C or YLR146C"
@@ -110044,9 +109996,11 @@
           - biocyc: "RXN0-5217"
           - kegg.pathway: "Glutathione metabolism"
           - kegg.reaction: "R08359"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4737"
+      - id: "r_4736"
       - name: "(2R,3S)-3-isopropylmalate:NAD+ oxidoreductase"
       - metabolites: !!omap
           - s_0009: -1
@@ -110066,9 +110020,11 @@
           - kegg.reaction: "R10052"
           - metanetx.reaction: "MNXR113436"
           - rhea: "RHEA:32271"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4738"
+      - id: "r_4737"
       - name: "(2R,3S)-3-isopropylmalate hydro-lyase (2-isopropylmaleate-forming)"
       - metabolites: !!omap
           - s_0009: 1
@@ -110084,9 +110040,11 @@
           - kegg.reaction: "R10170"
           - metanetx.reaction: "MNXR113536"
           - rhea: "RHEA:32287"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4739"
+      - id: "r_4738"
       - name: "2-methyl-4-amino-5-hydroxymethylpyrimidine-diphosphate:2-(2-carboxy-4-methylthiazol-5-yl)ethyl phosphate 2-methyl-4-aminopyrimidine-5-methenyltransferase"
       - metabolites: !!omap
           - s_0267: -1
@@ -110094,11 +110052,12 @@
           - s_0633: 1
           - s_0794: -2
           - s_1497: 1
-          - s_4319: -1
+          - s_4317: -1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YPL214C"
       - eccodes: "2.5.1.3"
+      - references: "Isolation and characterization of the THI6 gene encoding a bifunctional thiamin-phosphate pyrophosphorylase/hydroxyethylthiazole kinase from Saccharomyces cerevisiae"
       - subsystem:
           - "Thiamine metabolism"
       - annotation: !!omap
@@ -110107,19 +110066,22 @@
           - kegg.reaction: "R10712"
           - metanetx.reaction: "MNXR114031"
           - rhea: "RHEA:47848"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4740"
+      - id: "r_4739"
       - name: "dimethylallyl-phosphate:FMNH2 prenyltransferase"
       - metabolites: !!omap
           - s_1326: 1
           - s_4298: -1
           - s_4308: -1
-          - s_4350: 1
+          - s_4347: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YDR538W"
       - eccodes: "2.5.1.129"
+      - references: "doi: 10.1021/cb5008103"
       - subsystem:
           - "Riboflavin metabolism"
       - annotation: !!omap
@@ -110127,19 +110089,22 @@
           - kegg.reaction: "R11225"
           - metanetx.reaction: "MNXR114523"
           - rhea: "RHEA:37743"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4741"
+      - id: "r_4740"
       - name: "(R)-2-hydroxyglutarate:pyruvate oxidoreductase [(R)-lactate-forming]"
       - metabolites: !!omap
           - s_0027: 1
           - s_0182: 1
           - s_1401: -1
-          - s_4320: -1
+          - s_4318: -1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YDL178W or YEL071W"
       - eccodes: "1.1.99.40"
+      - references: "doi: 10.1002/(SICI)1097-0061(19990930)15:13<1377::AID-YEA473>3.0.CO;2-0"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
@@ -110147,14 +110112,16 @@
           - kegg.reaction: "R11593"
           - metanetx.reaction: "MNXR169718"
           - rhea: "RHEA:51608"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4742"
+      - id: "r_4741"
       - name: "L-serine hydro-lyase"
       - metabolites: !!omap
           - s_0807: 1
           - s_1042: -1
-          - s_4321: 1
+          - s_4319: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YCL064C"
@@ -110167,39 +110134,45 @@
           - kegg.reaction: "R00590"
           - metanetx.reaction: "MNXR104344"
           - rhea: "RHEA:40663"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4743"
+      - id: "r_4742"
       - name: "cytidine nucleosidase"
       - metabolites: !!omap
           - s_0543: -1
           - s_0545: 1
           - s_0803: -1
-          - s_4322: 1
+          - s_4320: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YDR400W"
       - eccodes: "3.2.2.3"
+      - references: "doi: 10.1128/AEM.68.3.1336-1343.2002；doi: 10.1007/s00294-002-0296-9"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
           - biocyc: "RXN0-361"
           - kegg.pathway: "Pyrimidine metabolism"
           - metanetx.reaction: "MNXR177657"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
           - seed.reactions: "rxn26065"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4744"
+      - id: "r_4743"
       - name: "(E,E,)-farnesol synthase;(2E,6E)-farnesyl diphosphate phosphatase"
       - metabolites: !!omap
           - s_0810: -1
-          - s_4324: -1
-          - s_4326: 1
-          - s_4329: 1
+          - s_4322: -1
+          - s_4324: 1
+          - s_4327: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YDR481C"
       - eccodes: "3.1.7.6"
+      - references: "doi: 10.1111/j.1432-1033.1991.tb15803.x"
       - subsystem:
           - "Folate biosynthesis"
       - annotation: !!omap
@@ -110207,20 +110180,23 @@
           - kegg.pathway: "Folate biosynthesis"
           - metanetx.reaction: "MNXR112213"
           - rhea: "RHEA:27526"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4745"
+      - id: "r_4744"
       - name: "2-hexaprenyl-3-methyl-5-hydroxy-6-methoxy-1,4-benzoquinol O-methyltransferase"
       - metabolites: !!omap
           - s_0799: 1
           - s_1415: 1
           - s_1419: -1
           - s_1535: 1
-          - s_4330: -1
+          - s_4328: -1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YOL096C"
       - eccodes: "2.1.1.64"
+      - references: "doi: 10.1074/jbc.274.31.21665"
       - subsystem:
           - "Ubiquinone and other terpenoid-quinone biosynthesis"
       - annotation: !!omap
@@ -110228,29 +110204,34 @@
           - kegg.pathway: "Ubiquinone and other terpenoid-quinone biosynthesis"
           - metanetx.reaction: "MNXR123633"
           - rhea: "RHEA:44400"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4746"
+      - id: "r_4745"
       - name: "D-ribulokinase"
       - metabolites: !!omap
           - s_0394: 1
           - s_0434: -1
           - s_0577: 1
           - s_0794: 1
-          - s_4327: -1
+          - s_4325: -1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YDR109C"
       - eccodes: "2.7.1.47"
+      - references: "doi: 10.1074/jbc.M116.760744."
       - subsystem:
           - "Alternate carbon metabolism"
       - annotation: !!omap
           - biocyc: "D-RIBULOKIN-RXN"
           - kegg.pathway: "Alternate carbon metabolism"
           - metanetx.reaction: "MNXR146238"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4747"
+      - id: "r_4746"
       - name: "ATP:acetate adenylyltransferase"
       - metabolites: !!omap
           - s_0362: -1
@@ -110262,6 +110243,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YLR153C or YAL054C"
       - eccodes: "6.2.1.1"
+      - references: "doi: 10.1016/j.molcel.2006.05.040;doi: 10.1074/jbc.271.46.28953"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
@@ -110269,29 +110251,11 @@
           - kegg.reaction: "R00316"
           - metanetx.reaction: "MNXR189032"
           - rhea: "RHEA:58136"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4748"
-      - name: "UTP:cytidine 5'-phosphotransferase"
-      - metabolites: !!omap
-          - s_0526: 1
-          - s_0543: -1
-          - s_0794: 1
-          - s_1538: 1
-          - s_1559: -1
-      - lower_bound: -1000
-      - upper_bound: 1000
-      - gene_reaction_rule: "YNR012W"
-      - eccodes: "2.7.1.48"
-      - subsystem:
-          - "Pyrimidine metabolism"
-      - annotation: !!omap
-          - kegg.pathway: "Pyrimidine metabolism"
-          - kegg.reaction: "R00516"
-          - metanetx.reaction: "MNXR189000"
-          - sbo: "SBO:0000176"
-    - !!omap
-      - id: "r_4749"
+      - id: "r_4747"
       - name: "(S)-1-pyrroline-5-carboxylate:NADP+ oxidoreductase"
       - metabolites: !!omap
           - s_0119: -1
@@ -110311,21 +110275,24 @@
           - kegg.reaction: "R00708"
           - metanetx.reaction: "MNXR106651"
           - rhea: "RHEA:24882"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4750"
+      - id: "r_4748"
       - name: "Succinate:CoA ligase (IDP-forming)"
       - metabolites: !!omap
           - s_0532: -1
           - s_1326: 1
           - s_1460: -1
           - s_1464: 1
-          - s_4358: -1
-          - s_4359: 1
+          - s_4355: -1
+          - s_4356: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YOR142W or YGR244C"
       - eccodes: "6.2.1.4"
+      - references: "doi: 10.1046/j.1432-1327.1998.2580736.x"
       - subsystem:
           - "Citrate cycle (TCA cycle)"
       - annotation: !!omap
@@ -110333,9 +110300,11 @@
           - kegg.pathway: "Citrate cycle (TCA cycle)"
           - kegg.reaction: "R00727"
           - metanetx.reaction: "MNXR147043"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4751"
+      - id: "r_4749"
       - name: "dATP:pyruvate 2-O-phosphotransferase"
       - metabolites: !!omap
           - s_0582: 1
@@ -110355,9 +110324,11 @@
           - kegg.reaction: "R01138"
           - metanetx.reaction: "MNXR97145"
           - rhea: "RHEA:30727"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4752"
+      - id: "r_4750"
       - name: "palmitoyl-CoA:electron-transfer flavoprotein 2,3-oxidoreductase"
       - metabolites: !!omap
           - s_0801: -1
@@ -110379,16 +110350,18 @@
           - kegg.pathway: "Fatty acid degradation"
           - kegg.reaction: "R01279"
           - rhea: "RHEA:30747"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4753"
+      - id: "r_4751"
       - name: "Isocitrate:NADP+ oxidoreductase"
       - metabolites: !!omap
           - s_0799: 1
           - s_0941: -1
           - s_1210: -1
           - s_1214: 1
-          - s_4331: 1
+          - s_4329: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YDL066W or YLR174W or YNL009W"
@@ -110401,9 +110374,11 @@
           - kegg.reaction: "R01899"
           - metanetx.reaction: "MNXR191204"
           - rhea: "RHEA:25588"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4754"
+      - id: "r_4752"
       - name: "2-oxoadipate dehydrogenase complex"
       - metabolites: !!omap
           - s_0177: -1
@@ -110411,7 +110386,7 @@
           - s_0532: -1
           - s_1200: -1
           - s_1205: 1
-          - s_4333: 1
+          - s_4331: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YDR148C or YFL018C"
@@ -110427,21 +110402,24 @@
           - kegg.reaction: "R01933"
           - metanetx.reaction: "MNXR190426"
           - rhea: "RHEA:30795"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4755"
+      - id: "r_4753"
       - name: "Deoxyguanosine:orthophosphate ribosyltransferase"
       - metabolites: !!omap
           - s_0134: -1
           - s_0787: 1
           - s_1322: -1
-          - s_4332: 1
+          - s_4330: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YLR209C"
       - eccodes:
           - "2.4.2.1"
           - "2.4.2.4"
+      - references: "By similarity"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -110450,22 +110428,25 @@
           - kegg.reaction: "R01969"
           - metanetx.reaction: "MNXR146176"
           - rhea: "RHEA:27738"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
-      - id: "r_4756"
+      - id: "r_4754"
       - name: "dTTP nucleotidohydrolase"
       - metabolites: !!omap
           - s_2994: -1
           - s_2995: 1
           - s_3146: 1
-          - s_4360: -1
-          - s_4361: 1
+          - s_4357: -1
+          - s_4358: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YER005W"
       - eccodes:
           - "3.6.1.5"
           - "3.6.1.39"
+      - references: "doi: 10.1074/jbc.274.30.21450"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
@@ -110474,9 +110455,11 @@
           - kegg.reaction: "R02095"
           - metanetx.reaction: "MNXR102048"
           - rhea: "RHEA:19013"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4757"
+      - id: "r_4755"
       - name: "3-sulfino-L-alanine carboxy-lyase"
       - metabolites: !!omap
           - s_0456: 1
@@ -110497,16 +110480,18 @@
           - kegg.reaction: "R02466"
           - metanetx.reaction: "MNXR94978"
           - rhea: "RHEA:16877"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4758"
+      - id: "r_4756"
       - name: "Deamino-NAD+ nucleotidohydrolase"
       - metabolites: !!omap
           - s_0426: 1
           - s_0801: 2
           - s_0809: -1
-          - s_4362: -1
-          - s_4363: 1
+          - s_4359: -1
+          - s_4360: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YGL067W"
@@ -110519,9 +110504,11 @@
           - kegg.pathway: "Nicotinate and nicotinamide metabolism"
           - kegg.reaction: "R03004"
           - metanetx.reaction: "MNXR190936"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4759"
+      - id: "r_4757"
       - name: "trans-4-Hydroxy-L-proline:NAD+ 5-oxidoreductase"
       - metabolites: !!omap
           - s_0116: 1
@@ -110539,37 +110526,42 @@
           - kegg.pathway: "Arginine and proline metabolism"
           - kegg.reaction: "R03291"
           - metanetx.reaction: "MNXR100698"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4760"
+      - id: "r_4758"
       - name: "trans-Oct-2-enoyl-CoA reductase"
       - metabolites: !!omap
           - s_0799: 1
           - s_1210: -1
           - s_1214: 1
           - s_4213: -1
-          - s_4338: 1
+          - s_4335: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YBR026C"
       - eccodes:
           - "1.3.1.8"
           - "1.3.1.38"
+      - references: "doi: 10.1128/MCB.21.18.6243-6253.2001"
       - subsystem:
           - "Fatty acid biosynthesis"
       - annotation: !!omap
           - kegg.pathway: "Fatty acid biosynthesis"
           - kegg.reaction: "R03776"
           - metanetx.reaction: "MNXR192338"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4761"
+      - id: "r_4759"
       - name: "Sucrose 6-phosphate fructohydrolase"
       - metabolites: !!omap
           - s_0553: 1
           - s_0568: 1
           - s_0803: -1
-          - s_4335: -1
+          - s_4332: -1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YIL162W"
@@ -110580,15 +110572,17 @@
           - kegg.pathway: "Starch and sucrose metabolism"
           - kegg.reaction: "R03921"
           - metanetx.reaction: "MNXR153571"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4762"
+      - id: "r_4760"
       - name: "3-Hydroxy-L-kynurenine:2-oxoglutarate aminotransferase"
       - metabolites: !!omap
           - s_0180: -1
           - s_0222: -1
           - s_0991: 1
-          - s_4336: 1
+          - s_4333: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YJL060W"
@@ -110601,20 +110595,23 @@
           - kegg.reaction: "R04171"
           - metanetx.reaction: "MNXR108708"
           - rhea: "RHEA:65888"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4763"
+      - id: "r_4761"
       - name: "(S)-3-Hydroxyisobutyryl-CoA hydrolase"
       - metabolites: !!omap
           - s_0532: 1
           - s_0799: 1
           - s_0807: -1
-          - s_4340: -1
-          - s_4341: 1
+          - s_4337: -1
+          - s_4338: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YDR036C"
       - eccodes: "3.1.2.4"
+      - references: "doi: 10.1016/S0168-6445(03)00017-2"
       - subsystem:
           - "Valine, leucine and isoleucine metabolism"
       - annotation: !!omap
@@ -110622,16 +110619,18 @@
           - kegg.reaction: "R05064"
           - metanetx.reaction: "MNXR190062"
           - rhea: "RHEA:31251"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4764"
+      - id: "r_4762"
       - name: "meso-2,3-butanediol:NAD+ oxidoreductase [(S)-acetoin forming]"
       - metabolites: !!omap
           - s_0794: 1
           - s_1198: -1
           - s_1203: 1
-          - s_4342: -1
-          - s_4344: 1
+          - s_4339: -1
+          - s_4341: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YAL061W or YAL060W"
@@ -110645,28 +110644,33 @@
           - kegg.pathway: "Butanoate metabolism"
           - kegg.reaction: "R10504"
           - metanetx.reaction: "MNXR195390"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4765"
+      - id: "r_4763"
       - name: "5-methylcytosine deaminase"
       - metabolites: !!omap
           - s_0419: 1
           - s_0794: -1
           - s_0803: -1
-          - s_4346: -1
-          - s_4349: 1
+          - s_4343: -1
+          - s_4346: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YPR062W"
       - eccodes: "3.5.4.1"
+      - references: "doi: 10.1007/s002940050482;doi: 10.1007/s002940050169"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
           - biocyc: "RXN-14197"
           - kegg.pathway: "Pyrimidine metabolism"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4766"
+      - id: "r_4764"
       - name: "ureidoglycolate urea-lyase;ureidoglycolate lyase"
       - metabolites: !!omap
           - s_0779: 1
@@ -110676,32 +110680,17 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YIR032C"
       - eccodes: "4.3.2.3"
+      - references: "doi: 10.1128/mcb.5.9.2279-2288.1985"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
           - biocyc: "UREIDOGLYCOLATE-LYASE-RXN"
           - kegg.pathway: "Purine metabolism"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4767"
-      - name: "flavin prenyltransferase;FMN prenyltransferase"
-      - metabolites: !!omap
-          - s_1326: 1
-          - s_4298: -1
-          - s_4308: -1
-          - s_4350: 1
-      - lower_bound: 0
-      - upper_bound: 1000
-      - gene_reaction_rule: "YDR538W"
-      - eccodes: "2.5.1.129"
-      - subsystem:
-          - "Ubiquinone and other terpenoid-quinone biosynthesis"
-      - annotation: !!omap
-          - biocyc: "RXN-16937"
-          - kegg.pathway: "Ubiquinone and other terpenoid-quinone biosynthesis"
-          - sbo: "SBO:0000176"
-    - !!omap
-      - id: "r_4768"
+      - id: "r_4765"
       - name: "5,6,7,8-tetrahydrofolate:NADP+ oxidoreductase"
       - metabolites: !!omap
           - s_0719: 1
@@ -110713,15 +110702,18 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YOR236W"
       - eccodes: "1.5.1.3"
+      - references: "By similarity"
       - subsystem:
           - "One carbon pool by folate"
       - annotation: !!omap
           - kegg.pathway: "One carbon pool by folate"
           - kegg.reaction: "R00940"
           - metanetx.reaction: "MNXR188902"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
-      - id: "r_4769"
+      - id: "r_4766"
       - name: "dGTP:pyruvate 2-O-phosphotransferase"
       - metabolites: !!omap
           - s_0613: 1
@@ -110741,15 +110733,17 @@
           - kegg.reaction: "R01858"
           - metanetx.reaction: "MNXR95613"
           - rhea: "RHEA:30791"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4770"
+      - id: "r_4767"
       - name: "3-sulfino-L-alanine:2-oxoglutarate aminotransferase"
       - metabolites: !!omap
           - s_0180: -1
           - s_0991: 1
           - s_4104: -1
-          - s_4351: 1
+          - s_4348: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YLR027C or YKL106W"
@@ -110762,9 +110756,11 @@
           - kegg.reaction: "R02619"
           - metanetx.reaction: "MNXR147724"
           - rhea: "RHEA:70295"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4771"
+      - id: "r_4768"
       - name: "octanoyl-CoA:electron-transfer flavoprotein 2-oxidoreductase"
       - metabolites: !!omap
           - s_0801: -1
@@ -110789,31 +110785,36 @@
           - kegg.reaction: "R03777"
           - metanetx.reaction: "MNXR152808"
           - rhea: "RHEA:30943"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4772"
+      - id: "r_4769"
       - name: "trans-Dodec-2-enoyl-CoA reductase"
       - metabolites: !!omap
           - s_0799: 1
           - s_1210: -1
           - s_1214: 1
-          - s_4355: 1
-          - s_4357: -1
+          - s_4352: 1
+          - s_4354: -1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YBR026C"
       - eccodes:
           - "1.3.1.8"
           - "1.3.1.38"
+      - references: "doi: 10.1128/MCB.21.18.6243-6253.2001"
       - subsystem:
           - "Fatty acid biosynthesis"
       - annotation: !!omap
           - kegg.pathway: "Fatty acid biosynthesis"
           - kegg.reaction: "R03856"
           - metanetx.reaction: "MNXR190551"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4773"
+      - id: "r_4770"
       - name: "L-1-pyrroline-3-hydroxy-5-carboxylate:NADP+ oxidoreductase"
       - metabolites: !!omap
           - s_0678: 1
@@ -110821,7 +110822,7 @@
           - s_0807: -2
           - s_1210: -1
           - s_1214: 1
-          - s_4356: -1
+          - s_4353: -1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YHR037W"
@@ -110833,9 +110834,11 @@
           - kegg.reaction: "R04445"
           - metanetx.reaction: "MNXR105368"
           - rhea: "RHEA:24943"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4774"
+      - id: "r_4771"
       - name: "ATP:2'-deoxy-5-hydroxymethylcytidine-5'-diphosphate phosphotransferase"
       - metabolites: !!omap
           - s_0397: 1
@@ -110846,15 +110849,18 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YKL067W"
       - eccodes: "2.7.4.6"
+      - references: "doi: 10.1016/0003-9861(91)90129-7;doi: 10.1007/s10863-006-9045-y;doi: 10.1021/bi00830a026"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
           - kegg.pathway: "Pyrimidine metabolism"
           - kegg.reaction: "R00139"
           - metanetx.reaction: "MNXR106405"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4775"
+      - id: "r_4772"
       - name: "P1,P3-bis(5'-adenosyl)-triphosphate adenylohydrolase"
       - metabolites: !!omap
           - s_0398: 1
@@ -110866,6 +110872,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YDR305C"
       - eccodes: "3.6.1.29"
+      - references: "doi: 10.1186/1471-2199-3-7;doi: 10.1128/JB.180.9.2345-2349.1998"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -110873,9 +110880,11 @@
           - kegg.reaction: "R00187"
           - metanetx.reaction: "MNXR96340"
           - rhea: "RHEA:13893"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4776"
+      - id: "r_4773"
       - name: "GTP 8,9-hydrolase"
       - metabolites: !!omap
           - s_0800: -1
@@ -110892,20 +110901,23 @@
           - kegg.pathway: "Folate biosynthesis"
           - kegg.reaction: "R00428"
           - metanetx.reaction: "MNXR189537"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4777"
+      - id: "r_4774"
       - name: "GTP diphosphate-lyase (cyclizing; 3',5'-cyclic-GMP-forming)"
       - metabolites: !!omap
           - s_2834: 1
           - s_4286: 1
-          - s_4364: -1
+          - s_4361: -1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YJL005W"
       - eccodes:
           - "4.6.1.1"
           - "4.6.1.2"
+      - references: "doi: 10.1016/0092-8674(85)90179-5"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -110914,9 +110926,11 @@
           - kegg.reaction: "R00434"
           - metanetx.reaction: "MNXR189648"
           - rhea: "RHEA:13665"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4778"
+      - id: "r_4775"
       - name: "GTP diphosphate-lyase (cyclizing; 3',5'-cyclic-GMP-forming)"
       - metabolites: !!omap
           - s_0195: 1
@@ -110928,6 +110942,7 @@
       - eccodes:
           - "4.6.1.1"
           - "4.6.1.2"
+      - references: "doi: 10.1016/0092-8674(85)90179-5"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -110936,9 +110951,11 @@
           - kegg.reaction: "R00434"
           - metanetx.reaction: "MNXR189648"
           - rhea: "RHEA:13665"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4779"
+      - id: "r_4776"
       - name: "ATP:cytidine 5'-phosphotransferase"
       - metabolites: !!omap
           - s_0398: 1
@@ -110952,6 +110969,7 @@
       - eccodes:
           - "2.7.1.48"
           - "2.7.1.213"
+      - references: "doi: 10.1007/s002940050482;doi: 10.1093/nar/18.17.5279"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
@@ -110960,9 +110978,11 @@
           - kegg.reaction: "R00513"
           - metanetx.reaction: "MNXR190860"
           - rhea: "RHEA:24674"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4780"
+      - id: "r_4777"
       - name: "acetyl adenylate:CoA acetyltransferase"
       - metabolites: !!omap
           - s_0377: 1
@@ -110974,15 +110994,18 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YLR153C or YAL054C"
       - eccodes: "6.2.1.1"
+      - references: "doi: 10.1016/j.molcel.2006.05.040;doi: 10.1074/jbc.271.46.28953"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
           - kegg.pathway: "Pyruvate metabolism"
           - kegg.reaction: "R00236"
           - metanetx.reaction: "MNXR189030"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4781"
+      - id: "r_4778"
       - name: "acetyl-CoA:propanoyl-CoA 2-C-acetyltransferase;"
       - metabolites: !!omap
           - s_0378: -1
@@ -111002,20 +111025,23 @@
           - kegg.pathway: "Valine, leucine and isoleucine metabolism"
           - kegg.reaction: "R00927"
           - rhea: "RHEA:30719"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4782"
+      - id: "r_4779"
       - name: "5-Methylcytosine aminohydrolase"
       - metabolites: !!omap
           - s_0419: 1
           - s_0794: -1
           - s_0803: -1
-          - s_4346: -1
-          - s_4349: 1
+          - s_4343: -1
+          - s_4346: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YPR062W"
       - eccodes: "3.5.4.1"
+      - references: "doi: 10.1007/s002940050482;doi: 10.1007/s002940050169"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
@@ -111024,9 +111050,11 @@
           - kegg.reaction: "R01411"
           - metanetx.reaction: "MNXR101425"
           - rhea: "RHEA:30759"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4783"
+      - id: "r_4780"
       - name: "L-Homoserine:NAD+ oxidoreductase"
       - metabolites: !!omap
           - s_0794: 1
@@ -111045,9 +111073,11 @@
           - kegg.reaction: "R01773"
           - metanetx.reaction: "MNXR100735"
           - rhea: "RHEA:15757"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4784"
+      - id: "r_4781"
       - name: "L-Kynurenine:2-oxoglutarate aminotransferase"
       - metabolites: !!omap
           - s_0180: -1
@@ -111058,6 +111088,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YJL060W"
       - eccodes: "2.6.1.7"
+      - references: "By similarity"
       - subsystem:
           - "Tryptophan metabolism"
       - annotation: !!omap
@@ -111066,9 +111097,11 @@
           - kegg.reaction: "R01956"
           - metanetx.reaction: "MNXR100948"
           - rhea: "RHEA:20964"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
-      - id: "r_4785"
+      - id: "r_4782"
       - name: "1-(5'-Phosphoribosyl)-5-amino-4-imidazolecarboxamide:pyrophosphate phosphoribosyltransferase"
       - metabolites: !!omap
           - s_0637: -1
@@ -111079,6 +111112,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YML022W or YDR441C"
       - eccodes: "2.4.2.7"
+      - references: "doi: 10.1016/s0167-4838(97)00068-x;doi: 10.1128/JB.181.1.347-352.1999"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -111087,16 +111121,18 @@
           - kegg.reaction: "R04378"
           - metanetx.reaction: "MNXR190167"
           - rhea: "RHEA:31135"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4786"
+      - id: "r_4783"
       - name: "5-methyltetrahydrofolate:NAD+ oxidoreductase"
       - metabolites: !!omap
           - s_0307: 1
           - s_0799: 1
           - s_1200: -1
           - s_1205: 1
-          - s_4315: -1
+          - s_4313: -1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YGL125W or YPL023C"
@@ -111109,16 +111145,18 @@
           - kegg.reaction: "R07168"
           - metanetx.reaction: "MNXR145716"
           - rhea: "RHEA:19821"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4787"
+      - id: "r_4784"
       - name: "S-adenosylmethioninamine:cadaverine 3-aminopropyltransferase"
       - metabolites: !!omap
           - s_0800: 1
-          - s_4313: -1
-          - s_4314: 1
-          - s_4316: -1
-          - s_4317: 1
+          - s_4311: -1
+          - s_4312: 1
+          - s_4314: -1
+          - s_4315: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YPR069C or YLR146C"
@@ -111130,45 +111168,53 @@
           - kegg.pathway: "Glutathione metabolism"
           - kegg.reaction: "R08359"
           - rhea: "RHEA:33387"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4788"
+      - id: "r_4785"
       - name: "cytidine nucleosidase"
       - metabolites: !!omap
           - s_0808: -1
           - s_4288: -1
-          - s_4323: 1
-          - s_4328: 1
+          - s_4321: 1
+          - s_4326: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YDR400W"
       - eccodes: "3.2.2.3"
+      - references: "doi: 10.1128/AEM.68.3.1336-1343.2002；doi: 10.1007/s00294-002-0296-9"
       - subsystem:
           - "Pyrimidine metabolism"
       - annotation: !!omap
           - biocyc: "RXN0-361_n"
           - kegg.pathway: "Pyrimidine metabolism"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4789"
+      - id: "r_4786"
       - name: "(E,E,)-farnesol synthase;(2E,6E)-farnesyl diphosphate phosphatase"
       - metabolites: !!omap
           - s_0190: -1
           - s_0633: 1
           - s_0803: -1
-          - s_4325: 1
+          - s_4323: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YDR481C"
       - eccodes: "3.1.7.6"
+      - references: "doi: 10.1111/j.1432-1033.1991.tb15803.x"
       - subsystem:
           - "Thiamine metabolism"
       - annotation: !!omap
           - biocyc: "RXN-8617_c"
           - kegg.pathway: "Thiamine metabolism"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4790"
+      - id: "r_4787"
       - name: "ATP:acetate adenylyltransferase"
       - metabolites: !!omap
           - s_0366: -1
@@ -111180,6 +111226,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YLR153C or YAL054C"
       - eccodes: "6.2.1.1"
+      - references: "doi: 10.1016/j.molcel.2006.05.040;doi: 10.1074/jbc.271.46.28953"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
@@ -111187,35 +111234,17 @@
           - kegg.reaction: "R00316"
           - metanetx.reaction: "MNXR189032"
           - rhea: "RHEA:58136"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4791"
-      - name: "UTP:cytidine 5'-phosphotransferase"
-      - metabolites: !!omap
-          - s_0800: 1
-          - s_1540: 1
-          - s_4287: 1
-          - s_4288: -1
-          - s_4334: -1
-      - lower_bound: -1000
-      - upper_bound: 1000
-      - gene_reaction_rule: "YNR012W"
-      - eccodes: "2.7.1.48"
-      - subsystem:
-          - "Pyrimidine metabolism"
-      - annotation: !!omap
-          - kegg.pathway: "Pyrimidine metabolism"
-          - kegg.reaction: "R00516"
-          - metanetx.reaction: "MNXR189000"
-          - sbo: "SBO:0000176"
-    - !!omap
-      - id: "r_4792"
+      - id: "r_4788"
       - name: "3-Hydroxy-L-kynurenine:2-oxoglutarate aminotransferase"
       - metabolites: !!omap
           - s_0182: -1
           - s_0993: 1
-          - s_4337: 1
-          - s_4339: -1
+          - s_4334: 1
+          - s_4336: -1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YJL060W"
@@ -111228,16 +111257,18 @@
           - kegg.reaction: "R04171"
           - metanetx.reaction: "MNXR108708"
           - rhea: "RHEA:65888"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4793"
+      - id: "r_4789"
       - name: "meso-2,3-butanediol:NAD+ oxidoreductase [(S)-acetoin forming]"
       - metabolites: !!omap
           - s_0800: 1
           - s_1201: -1
           - s_3753: 1
-          - s_4343: -1
-          - s_4345: 1
+          - s_4340: -1
+          - s_4342: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YAL061W or YAL060W"
@@ -111251,33 +111282,38 @@
           - kegg.pathway: "Butanoate metabolism"
           - kegg.reaction: "R10504"
           - metanetx.reaction: "MNXR195390"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4794"
+      - id: "r_4790"
       - name: "5-methylcytosine deaminase"
       - metabolites: !!omap
           - s_0800: -1
           - s_0808: -1
           - s_4291: 1
-          - s_4347: -1
-          - s_4348: 1
+          - s_4344: -1
+          - s_4345: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YPR062W"
       - eccodes: "3.5.4.1"
+      - references: "doi: 10.1007/s002940050482;doi: 10.1007/s002940050169"
       - subsystem:
           - "other"
       - annotation: !!omap
           - biocyc: "RXN-14197_n"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4795"
+      - id: "r_4791"
       - name: "3-sulfino-L-alanine:2-oxoglutarate aminotransferase"
       - metabolites: !!omap
           - s_0184: -1
           - s_0995: 1
-          - s_4352: 1
-          - s_4354: -1
+          - s_4349: 1
+          - s_4351: -1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YLR027C or YKL106W"
@@ -111290,20 +111326,23 @@
           - kegg.reaction: "R02619"
           - metanetx.reaction: "MNXR147724"
           - rhea: "RHEA:70295"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4796"
+      - id: "r_4792"
       - name: "P1,P3-bis(5'-adenosyl)-triphosphate adenylohydrolase"
       - metabolites: !!omap
           - s_0394: 1
           - s_0423: 1
           - s_0794: 2
           - s_0803: -1
-          - s_4365: -1
+          - s_4362: -1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YDR305C"
       - eccodes: "3.6.1.29"
+      - references: "doi: 10.1186/1471-2199-3-7;doi: 10.1128/JB.180.9.2345-2349.1998"
       - subsystem:
           - "Purine metabolism"
       - annotation: !!omap
@@ -111311,29 +111350,34 @@
           - kegg.reaction: "R00187"
           - metanetx.reaction: "MNXR96340"
           - rhea: "RHEA:13893"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4797"
+      - id: "r_4793"
       - name: "acetyl adenylate:CoA acetyltransferase"
       - metabolites: !!omap
           - s_0376: 1
           - s_0424: 1
           - s_0532: -1
           - s_0799: 1
-          - s_4366: -1
+          - s_4363: -1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YLR153C or YAL054C"
       - eccodes: "6.2.1.1"
+      - references: "doi: 10.1016/j.molcel.2006.05.040;doi: 10.1074/jbc.271.46.28953"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
           - kegg.pathway: "Pyruvate metabolism"
           - kegg.reaction: "R00236"
           - metanetx.reaction: "MNXR189030"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4798"
+      - id: "r_4794"
       - name: "5,6,7,8-tetrahydrofolate:NAD+ oxidoreductase"
       - metabolites: !!omap
           - s_0626: 1
@@ -111345,81 +111389,39 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YOR236W"
       - eccodes: "1.5.1.3"
+      - references: "By similarity"
       - subsystem:
           - "Folate biosynthesis"
       - annotation: !!omap
           - kegg.pathway: "Folate biosynthesis"
           - kegg.reaction: "R00936"
           - metanetx.reaction: "MNXR190916"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
-      - id: "r_4799"
+      - id: "r_4795"
       - name: "acetyl-CoA:D-amino-acid N-acetyltransferase"
       - metabolites: !!omap
           - s_0377: -1
           - s_0533: 1
-          - s_4367: -1
-          - s_4368: 1
+          - s_4364: -1
+          - s_4365: 1
       - lower_bound: 0
       - upper_bound: 1000
       - gene_reaction_rule: "YEL066W or YPR193C"
       - eccodes: "2.3.1.36"
+      - references: "doi: 10.1007/s00203-004-0724-y"
       - subsystem:
           - "Phenylalanine metabolism"
       - annotation: !!omap
           - kegg.pathway: "Phenylalanine metabolism"
           - kegg.reaction: "R03903"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4800"
-      - name: "(2R)-3-sulfolactate:NAD+ oxidoreductase"
-      - metabolites: !!omap
-          - s_0794: 1
-          - s_1198: -1
-          - s_1203: 1
-          - s_4369: -1
-          - s_4370: 1
-      - lower_bound: -1000
-      - upper_bound: 1000
-      - gene_reaction_rule: "YKL085W or YDL078C or YOL126C"
-      - eccodes:
-          - "1.1.1.37"
-          - "1.1.1.337"
-      - subsystem:
-          - "Cysteine and methionine metabolism"
-      - annotation: !!omap
-          - biocyc: "R230-RXN"
-          - kegg.pathway: "Cysteine and methionine metabolism"
-          - kegg.reaction: "R07136"
-          - metanetx.reaction: "MNXR110837"
-          - rhea: "RHEA:15533"
-          - sbo: "SBO:0000176"
-    - !!omap
-      - id: "r_4801"
-      - name: "(2R)-3-sulfolactate:NAD+ oxidoreductase"
-      - metabolites: !!omap
-          - s_0801: 1
-          - s_1202: -1
-          - s_1206: 1
-          - s_4371: -1
-          - s_4372: 1
-      - lower_bound: -1000
-      - upper_bound: 1000
-      - gene_reaction_rule: "YKL085W or YDL078C or YOL126C"
-      - eccodes:
-          - "1.1.1.37"
-          - "1.1.1.337"
-      - subsystem:
-          - "Cysteine and methionine metabolism"
-      - annotation: !!omap
-          - biocyc: "R230-RXN"
-          - kegg.pathway: "Cysteine and methionine metabolism"
-          - kegg.reaction: "R07136"
-          - metanetx.reaction: "MNXR110837"
-          - rhea: "RHEA:15533"
-          - sbo: "SBO:0000176"
-    - !!omap
-      - id: "r_4802"
+      - id: "r_4796"
       - name: "(R)-2-hydroxyglutarate:pyruvate oxidoreductase [(R)-lactate-forming]"
       - metabolites: !!omap
           - s_0025: 1
@@ -111430,6 +111432,7 @@
       - upper_bound: 1000
       - gene_reaction_rule: "YDL178W or YEL071W"
       - eccodes: "1.1.99.40"
+      - references: "doi: 10.1002/(SICI)1097-0061(19990930)15:13<1377::AID-YEA473>3.0.CO;2-0"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
@@ -111437,20 +111440,23 @@
           - kegg.reaction: "R11593"
           - metanetx.reaction: "MNXR169718"
           - rhea: "RHEA:51608"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4803"
+      - id: "r_4797"
       - name: "ATP:acetate adenylyltransferase"
       - metabolites: !!omap
           - s_0365: -1
           - s_0437: -1
           - s_0636: 1
           - s_0799: -1
-          - s_4366: 1
+          - s_4363: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YLR153C or YAL054C"
       - eccodes: "6.2.1.1"
+      - references: "doi: 10.1016/j.molcel.2006.05.040;doi: 10.1074/jbc.271.46.28953"
       - subsystem:
           - "Pyruvate metabolism"
       - annotation: !!omap
@@ -111458,16 +111464,18 @@
           - kegg.reaction: "R00316"
           - metanetx.reaction: "MNXR189032"
           - rhea: "RHEA:58136"
+          - rxnConfidenceScores: "5"
           - sbo: "SBO:0000176"
+      - confidence_score: 5
     - !!omap
-      - id: "r_4804"
+      - id: "r_4798"
       - name: "dATP:pyruvate 2-O-phosphotransferase"
       - metabolites: !!omap
           - s_0799: 1
           - s_1361: 1
           - s_1401: -1
-          - s_4373: -1
-          - s_4374: 1
+          - s_4366: -1
+          - s_4367: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YAL038W or YKL067W or YOR347C"
@@ -111480,16 +111488,18 @@
           - kegg.reaction: "R01138"
           - metanetx.reaction: "MNXR97145"
           - rhea: "RHEA:30727"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4805"
+      - id: "r_4799"
       - name: "Isocitrate:NADP+ oxidoreductase"
       - metabolites: !!omap
           - s_0794: 1
           - s_0940: -1
           - s_1207: -1
           - s_1212: 1
-          - s_4375: 1
+          - s_4368: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YDL066W or YLR174W or YNL009W"
@@ -111502,16 +111512,18 @@
           - kegg.reaction: "R01899"
           - metanetx.reaction: "MNXR191204"
           - rhea: "RHEA:25588"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4806"
+      - id: "r_4800"
       - name: "Isocitrate:NADP+ oxidoreductase"
       - metabolites: !!omap
           - s_0801: 1
           - s_0942: -1
           - s_1211: -1
           - s_1215: 1
-          - s_4376: 1
+          - s_4369: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YDL066W or YLR174W or YNL009W"
@@ -111524,36 +111536,41 @@
           - kegg.reaction: "R01899"
           - metanetx.reaction: "MNXR191204"
           - rhea: "RHEA:25588"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4807"
+      - id: "r_4801"
       - name: "5,6,7,8-tetrahydrofolate:NADP+ oxidoreductase"
       - metabolites: !!omap
           - s_0799: 2
           - s_1210: -2
           - s_1214: 2
           - s_1488: -1
-          - s_4353: 1
+          - s_4350: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YOR236W"
       - eccodes: "1.5.1.3"
+      - references: "By similarity"
       - subsystem:
           - "One carbon pool by folate"
       - annotation: !!omap
           - kegg.pathway: "One carbon pool by folate"
           - kegg.reaction: "R00940"
           - metanetx.reaction: "MNXR188902"
+          - rxnConfidenceScores: "3"
           - sbo: "SBO:0000176"
+      - confidence_score: 3
     - !!omap
-      - id: "r_4808"
+      - id: "r_4802"
       - name: "dGTP:pyruvate 2-O-phosphotransferase"
       - metabolites: !!omap
           - s_0801: 1
-          - s_4377: -1
-          - s_4378: -1
-          - s_4379: 1
-          - s_4380: 1
+          - s_4370: -1
+          - s_4371: -1
+          - s_4372: 1
+          - s_4373: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YAL038W or YOR347C or YKL067W"
@@ -111566,16 +111583,18 @@
           - kegg.reaction: "R01858"
           - metanetx.reaction: "MNXR95613"
           - rhea: "RHEA:30791"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4809"
+      - id: "r_4803"
       - name: "dGTP:pyruvate 2-O-phosphotransferase"
       - metabolites: !!omap
           - s_0799: 1
           - s_1361: 1
           - s_1401: -1
-          - s_4381: -1
-          - s_4382: 1
+          - s_4374: -1
+          - s_4375: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YAL038W or YOR347C or YKL067W"
@@ -111588,15 +111607,17 @@
           - kegg.reaction: "R01858"
           - metanetx.reaction: "MNXR95613"
           - rhea: "RHEA:30791"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
     - !!omap
-      - id: "r_4810"
+      - id: "r_4804"
       - name: "3-sulfino-L-alanine:2-oxoglutarate aminotransferase"
       - metabolites: !!omap
           - s_0182: -1
           - s_0993: 1
-          - s_4383: -1
-          - s_4384: 1
+          - s_4376: -1
+          - s_4377: 1
       - lower_bound: -1000
       - upper_bound: 1000
       - gene_reaction_rule: "YLR027C or YKL106W"
@@ -111609,7 +111630,9 @@
           - kegg.reaction: "R02619"
           - metanetx.reaction: "MNXR147724"
           - rhea: "RHEA:70295"
+          - rxnConfidenceScores: "2"
           - sbo: "SBO:0000176"
+      - confidence_score: 2
 - genes:
     - !!omap
       - id: "Q0045"
