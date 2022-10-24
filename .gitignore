@@ -54,7 +54,7 @@ helpsearch*/
 
 # Non-complying tables and files #
 ##################################
-*.xls*
+#*.xls*
 *.tab
 *.doc*
 *.ppt*
